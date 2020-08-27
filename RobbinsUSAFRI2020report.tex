@@ -1,0 +1,543 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{caption}
+\captionsetup{justification=raggedright, singlelinecheck=false, labelfont=bf}
+\usepackage[backend=bibtex, style=authoryear]{biblatex}
+% \usepackage{wrapfig}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{positioning}
+\usetikzlibrary{arrows, decorations.pathreplacing}
+
+\addbibresource{refs.bib}
+
+% \addbibresource{~/Dropbox/checkoffGrantProposal/checkoffGrantRef.bib}
+\AtBeginBibliography{\small}
+\usepackage{xcolor}
+\definecolor{hyperblue}{rgb}{0,0,0.4}
+
+\usepackage[noindentafter]{titlesec}
+
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titleformat*{\subsubsection}{\small\bfseries}
+
+% \titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
+% spacing: how to read {12pt plus 4pt minus 2pt}
+%           12pt is what we would like the spacing to be
+%           plus 4pt means that TeX can stretch it by at most 4pt
+%           minus 2pt means that TeX can shrink it by at most 2pt
+%       This is one example of the concept of, 'glue', in TeX
+
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+
+\usepackage{hyperref}[hidelinks]
+
+\hypersetup{
+	colorlinks = true, %Colours links instead of ugly boxes
+	urlcolor = hyperblue, %Colour for external hyperlinks
+	linkcolor = hyperblue, %Colour of internal links
+    anchorcolor = hyperblue,
+    citecolor = hyperblue,
+    filecolor = hyperblue,
+     }
+
+\usepackage[margin=1in]{geometry}
+% \textwidth=470pt
+% \oddsidemargin=0pt
+% \topmargin=0pt
+% \headheight=0pt
+% \textheight=660pt
+% \headsep=0pt
+
+\setlength{\parskip}{0.2\baselineskip}%
+
+
+
+% \title{Sequencing alfalfa populations to evaluate genome-wide prediction of forage growth curves. 
+% }
+
+
+\author{Nicholas Santantonio}
+\date{\today}
+
+
+\newcommand{\GxE}{G$\times$E}
+\newcommand{\GxG}{G$\times$G}
+
+\renewcommand{\topfraction}{0.7}  % max fraction of floats at top
+\renewcommand{\floatpagefraction}{0.7}% max fraction of page used for floats
+\renewcommand{\textfraction}{.2} % minimum fraction of page used for text
+
+\begin{document}
+
+
+\begin{center}
+\large{\textbf{U.S. Alfalfa Farmer Research Initiative}}
+\end{center}
+
+% USAFRI
+
+\begin{center}
+\Large{\textbf{Update: Evaluating approaches to high-throughput phenotyping and genotyping for genomic selection in alfalfa}}
+\end{center}
+
+% \section*{\centering Cover Page}
+
+\noindent \textbf{PI:} Kelly Robbins$^1$, \textbf{Co-PI:} Don Viands$^1$, \textbf{Co-PI:} Julie Hansen$^1$, \noindent \textbf{Key Personnel:} Nicholas Santantonio$^1$. \\
+\noindent $^1$Plant Breeding and Genetics, School of Integrated Plant Sciences, College of Agriculture and Life Sciences, Cornell University, Ithaca NY.
+
+\section{Introduction}
+
+[Need to acknowledge Noble and send to Maria Monteros! Double check MTA for compliance!]
+
+Genetic gain in alfalfa has approached stagnation in the past few decades, limiting benefits to alfalfa farmers. Adoption of new breeding technologies has also lagged due to the complexity of the genetics, a high phenotypic burden and a paucity of public funds for a crop that is just one degree of separation too far from the consumer's mouth, and interest. Evaluation of breeding material requires multiple harvests per year for multiple years, limiting the size and number of field trials. The low heritability of forage yield also demands extensive replication, further limiting the number of breeding populations that can be evaluated. The ability to screen more material will lead to higher effective selection intensities, and increase the frequency of developing populations that outperform current varieties. This project aims to determine how affordable new technologies including high-throughput genotyping and phenotyping, can provide additional information to reduce the phenotypic burden while providing insight into how genetic variability of growth and development leads to differential forage yield. 
+
+% The adoption of new breeding technologies for forages has lagged behind other crops with more simple genetics, easier phenotyping, and public interest. (sex appeal). 
+
+% Surprisingly this is not he case. and a more direct link between the tax payer and their mouths. While the vast majority of maize is used for animal feed, the tax payer, the law makers, and funding committee members all reminece of summer days and sweet corn on the grill when they read or hear the word ``corn''.  
+
+
+
+
+% The slow progression of genetic gain in alfalfa is indicative of  driven largely by a paucity of funding to a crop that is more than one degree from the consumers mouth.
+
+
+% the difficulty to of  of genetic gain in alfalfa has  need for better technology is highlighted by the failure of  low rates of alfalfa variety improvement, leading to stagnant benefits to farmers. 
+
+% Forages are just one degree of separation from consumer interest. When asked if they would give up meat or cheese, US consumers overwhelmingly answer meat. Dairy is considered an essentail part of the diet, and consumersseemingly care about where they come from, even so much as to pay premium prices for ``organic'' dairy products. Yet they have little interest in what those dairy cows eat that makes them organic.     
+
+
+
+% The use of high throughput phenotyping technology and genome-wide markers can allow for reduction in  
+
+High throughput phenotyping (HTP) technologies could drastically reduce the phenotypic burden in alfalfa by replacing a plot harvester with a unmanned aerial vehicle equipped with a multi-spectral camera for some harvests, locations, and/or replications. Quantitative genetic models can be built to accurately predict forage yields from spectral imaging, especially given that the harvested product is imaged directly. Images taken throughout the production years of a stand can also provide insight into genotype by environment interactions (\GxE), in which varieties have differential growth responses under different conditions. Understanding the genetic signal in differential growth response will allow for identification of breeding targets and optimal population change for sets of predictable environmental conditions. 
+
+% While there is literature on using spectral imaging to predict forage yield and quality \parencite{noland2018}, we were unable to find current literature that has attempted to determine genotypic differences of breeding populations or varieties using spectral imaging.
+
+Inclusion of genome-wide markers can improve these types of prediction models by enabling related material to share information. These genomic prediction models can allow for reduced replication, sparse testing and even prediction of unobserved populations. Estimating realized genetic relationships in alfalfa is complicated by the fact that varieties are not genetically distinct individuals. As an obligate outcrosser, alfalfa is typically bred on a population level, where varieties are released as synthetics to avoid inbreeding and take advantage of population-level heterosis. This has limited implementation of marker-based selection because large numbers of individuals must be genotyped and inter-mated to avoid inbreeding in future generations. Single individuals are not representative of a variety as a whole, and genotyping many individuals from each variety is costly and restrictive. 
+
+As part of this study, we evaluated a new genotyping strategy for alfalfa, where DNA from many individuals is bulked in a given breeding population or variety for genotyping. Because much of quantitative genetics and selection theory hinges on population level parameters, the current machinery can be easily adapted to breeding on a population level. By borrowing ideas from population genetics, allele counts within each variety or breeding population, as opposed to allele counts within each individual, can be used to estimate genetic relationships between populations using pairwise Fst statistics (CITATION Wier and Hill 2002). This genotyping strategy should allow for prediction of additive effects for genetic gain, as well as dominance effects to exploit population level heterosis. 
+
+Development of an affordable, population-level genotyping method would need the ability to count alleles in a given sample, a task well suited for sequence-based methods. Whole-genome resequencing of the nine historic alfalfa germplasm sources \parencite{barnes1977, segovia2004}, as well as materials from the Cornell forage breeding project, were used as a proof of concept to determine the efficacy of a sequenced-based population-level genotyping while identifying sites most applicable to such a method. Whole-genome sequences will be made publicly available for greater use within the community. We are also currently collaborating with Breeding Insight to incorporate highly polymorphic regions identified in these materials that can be used in a wide array of North American alfalfa germplasm to help build an affordable genotyping platform. 
+
+% Genomic selection (GS), in which genome-wide markers are used to predict performance and choose parents, has been shown to be a promising method for population improvement, but is in its infancy for implementation into plant breeding programs. For a forage breeding program, we envision the use of numerical optimization approaches to define optimal allele contributions and select parental populations. Parental breeding populations would then be inter-mated in optimal proportions to produce idealized allele frequencies in the offspring population using an insect pollinator. Prediction models would be updated on a yearly basis from both high- and low-throughput phenotypes of material in the field.
+
+% An affordable, population-based genotyping method would need the ability to count alleles in a given sample, a task well suited for sequence-based methods. However, we chose not to pursue a GBS type approach due to the costs associated with the patent on the method (KeyGene, \href{https://patents.google.com/patent/US8815512B2/en}{U.S. patent 8,815,512 B2}), the inability to scale up economically due to the high sequencing depth required, and the reduced representation of the genome. Therefore, a publicly available, cost effective, high-throughput, high-density, sequence-based genotyping platform is desperately needed for alfalfa. Amplicon sequencing-based methods could scale up economically if well designed. We have been in contact with the Breeding Insight initiative (USDA, 2019) to use all sequence data collected from this project to help build this kind of marker platform for alfalfa.
+
+
+% Unfortunately, reduced-representation, sequence-based genotyping methods such as GBS could work for this approach, but would not scale up economically due to the high depth required. 
+
+
+% ample sequence surveying the genetic variation in alfalfa were available to help design the platform.
+% essentially all  are currently claimed under a patent held by KeyGene (U.S. patent 8,815,512 B2). 
+
+% This proposal is in concert with another proposal as part of an effort to gather supporting information for further federal funding from the USDA. The other proposal is requesting funds to sequence diverse materials from the nine alfalfa germplasm sources that have been previously phenotyped in Las Cruces, NM \parencite{segovia2004}. That material will be used as a proof of concept for population level genomic prediction, as well as provide a pseudo-pan-genome of alfalfa that can be used to help construct a high-throughput marker platform. 
+
+
+% The sequence requested in this proposal is that of Cornell breeding material that will allow us to validate the HTP prediction models, as well as contribute toward the effort of an affordable marker platform. Integration of population-level genetic relationships with high-throughput multi-spectral imaging has the potential to revolutionize the modern forage breeding program in the age of Digital Ag.
+
+
+In this report, we detail our findings for incorporating genome-wide population-level markers and high-throughput phenotyping to reduce phenotypic burden, estimate genotype specific growth curves, and how they are related to forage yield and quality. 
+
+\section*{Objectives}
+
+The objective of this study was to evaluate the potential for combining a population-level genotyping approach with aerial imaging to model growth and development, reduce phenotypic burden and aid in genomic selection strategies. 
+
+\begin{itemize}
+	  \setlength\itemsep{0.2em}
+	\item Evaluate the efficacy of using a sequence-based population-level bulk genotyping approach to predict yield performance in diverse and elite germplasm.
+
+	\item Estimate the genetic correlations of multi-spectral indices with forage yield and quality using population-level genomic relationships. 
+
+	\item Determine efficacy of phenotype reduction using spectral indices.
+	
+	\item Fit population specific growth curves for each harvest using genomic relationships and spectral indices. 
+\end{itemize}
+
+
+
+\section*{Methodology}
+
+\subsection{Plant materials}
+
+To help evaluate the efficacy of the proposed bulk genotyping method in a diverse background, remnant seed from a diallel study \parencite{segovia2004} was obtained from Ian Ray at New Mexico State University. Segovia Lerma et al. \parencite*{segovia2004} created a half diallel by crossing all possible pairs of the nine historic North American germplasm source populations, African, Chilean, Flemish, Indian, Ladak, M. \emph{falcata}, M. \emph{varia}, Peruvian, and Turkistan \parencite{barnes1977}. The resulting 36 hybrid populations along with the 9 parental populations were evaluated in the field in 1997 and 1998 near Las Cruces, NM in a replicated complete block design. Forage dry matter content data from this experiment for five harvests in each year was provided to us by Ian Ray at New Mexico State University (NMSU), as well as AFLP genotyping data from the nine parental populations \parencite[1544 AFLP markers;][]{segovia2004}.
+
+Eight Cornell varieties and breeding populations were selected for sequence-based genotyping. These eight populations were established in a replicated variety trial along with seven commercial populations with 5 replicates in Geneva, NY in the spring of 2017. Remnant seed from the trial planting was obtained and used for sequence-based genotyping. Permission to genotype the remaining seven commercial varieties was not obtained at the time of project conception. Forage yield was measured using a plot flail harvester, and dry matter yield for each plot was calculated from fresh forage weight and dry matter content samples. Forage yield was collected for three cuts in 2018, 2019 and 2020. Only forage yields from cuts where aerial imaging was conducted are included in this report, which consisted of harvest two and three in 2019, and harvests 1 one and two in 2020. Quality samples from the second regrowth in 2019 and 2020 were harvested using standard practices, dried and ground. These samples were submitted to Dairy One for quantification of percent crude protein (CP) and percent neutral detergent fiber (NDF).
+
+
+\subsection{Aerial phenotyping}
+
+Aerial phenotyping commenced on July 5th, 2019 during the in the second year of forage production shortly after the first cut on June 27th. A DJI Matrice 600 Pro unmanned aerial vehicle (UAV) equipped with a Micasense Rededge-MX multi-spectral camera was used for all flights. A flight plan was designed to obtain an 80\% overlap in images collected at a flight speed of 2 m/s and an altitude of 20 m. Flights were conducted within 2 hours of solar noon on clear days when possible. A total of forty flights were conducted on average every 4.3 days across four harvests, with 10, 11, 12 and 7 flights for the cut 2 2019, cut 3 2019, cut 1 2020 and cut 2 2020, respectively. Four ground control points positioned at the four corners of the trial were measured with a Trimble RTK-GPS, which was used to geo-locate plots. Orthomosacis were constructed using Pix4D mapping software, and were subsequently uploaded into Imagebreed (www.imagebreed.org), a plot image database developed by our lab \parencite{morales2020}, for image processing and storage and vegetative index calculation at the plot level. All plot level image data has been made publicly available at www.imagebreed.org, while phenotypes and genotypes will be made publicly available at the time of publication, or by request.
+
+
+Normalized difference vegetation indices (NDVI) were calculated from mean pixel values of near infrared (NIR) and red bands of plot level images as
+
+\begin{equation}
+	NDVI = \frac{NIR - Red}{NIR + Red}
+\end{equation}
+
+Normalized difference red edge indices
+
+ % the second forage production year in 2019 (established 2017) of a replicated trial near Geneva, NY, were selected for UAV the second forage production year in 2019 (established 2017) of a replicated trial near Geneva, NY, were selected for Forage yield will be collected for each harvest, while forage quality samples will be collected for the second harvest of each year from three replications. Quality samples will be submitted to Dairy One for Basic Forage quality measurements. Drone imaging will commence after the first cut of alfalfa in 2019 due to a timing conflict. Multi-spectral images will be collected semi-weekly for the second and third cuts in 2019, and all three cuts in 2020. This should provide eight to ten time points per cut from which to fit growth curves. 
+% Eight 
+
+% These materials were genotyped using a whole-genome resequencing approach to estimate  frequencies within each population, which were subsequently be used to estimate genetic relationships between populations. 
+
+
+
+
+\subsection{Population-level Genotyping}
+
+Whole genome resequencing of bulk samples from nine historic North American germplasm sources, five hybrid populations and eight Cornell varieties, was performed at Cornell University. One hundred seed from each population were germinated, and 25 seed with radicle extension of 1-5 mm were bulk homogenized in a single well for DNA extraction. DNA extraction and sequence library preparation was performed by the Bioinformatics Research Center at Cornell University. Sequencing of these 24 samples was performed on an Illumina NovaSeq 6000 with a S2 flowcell to produce approximate 1,000 Gbp of single paired-end 150 bp reads at Weill Cornell Medical to acheive approximately 50$\times$ coverage. Reads from each of the four bulk samples from each population were pooled for alignment and variant calling. 
+
+Sequences were aligned to the a Bionano tetraploid alfalfa genome assembly 3a.2 (3a.2-bionano+unscaffolded-20200204T155609Z-001), kindly provided by the Noble Research Institute using the Burrows Wheeler alignment tool, bwa \parencite{li2009}. Only reads with a map quality over 20 (i.e. $p = 10^{-20}$ of mapping position being wrong) were kept to minimize alignment to multiple sites. Bi-allelic variant calls were performed using bcftools \parencite[SAMtools]{li2011}, and were further filtered based on a minimum and maximum read count of 20 and 125, respectively for all genotyped individuals. The minimum count allowed for reasonable estimation of allele frequencies, while the maximum reduced the probability of multiple alignment, given duplications not present in the reference genome. A final filter was imposed to remove sites with a global minor allele frequency greater than 0.05.
+
+The hybrid populations were genotyped `in silico' using the allele frequencies of the genotyped parental populations as
+\[p_{a,k,ij} = \frac{1}{2} (p_{a,k,i} + p_{a,k,j}) \quad \forall \ i \neq j,\]
+\noindent where $p_{a,k,i}$ and $p_{a,k,ij}$ is the $i^\text{th}$ parent population allele frequency and the $ij^\text{th}$ expected hybrid population allele frequency, respectively, for the $a^\text{th}$ allele of the $k^\text{th}$ marker. Correlation between the allele frequency estimates for the five hybrid populations that were sequenced, and their expected allele frequencies based on their parent populations were calculated to validate the `in silico' approach.
+
+% To minimize cost and simulate the high-throughput that would be necessary for scaling up, DNA from each parent population will be bulk extracted by germinating a few hundred seeds. Then, 100 whole seedlings at the same developmental stage will be selected for bulk homogenization and DNA extraction. Here, we will use exactly the same number of seedlings for each population, but in practice, this will likely be ignored, as the expected allele frequencies are not influenced by the number of individuals, given the sample is sufficiently large. Two biological replicates will be conducted at the DNA extraction and library preparation stages to determine the variability in allele frequency estimates and guide method development. We could individually extract DNA and barcode each seedling, but this would drastically increase the labor and reagents by two orders of magnitude, with little benefit as phenotypes for individuals would not be available or practical.   
+
+% DNA extraction and whole genome sequencing libraries would be prepared by BRC services. These nine populations will be combined with four hybrid populations from the diallel and eight Cornell varieties that we have obtained outside funding for sequencing. All 21 populations will be pooled and sequenced on five NextSeq500 lanes to obtain 30x coverage. Sequences will be aligned to the diploid alfalfa genome, CADL v0.95 (\href{http://www.medicagohapmap.org/}{Medicago HapMap project, NSF Project IOS-1237993}, 2016). Allelic regions will be defined using coverage and polymorphism content, likely at protein encoding genes and other conserved regions. Alleles will be counted for each population using open source software constructed in house. This level of coverage should be sufficient to determine the minimal coverage and number of individuals per population necessary to obtain good allele frequency estimates. 
+
+
+% Dominant marker scores will also be constructed `in silico' for the hybrid populations by using the product of the parental allele frequencies for all allele pairs at a single locus as
+% \[d_{aa',k,ij} = p_{a,k,i} \times p_{a',k,j} \quad \forall \ i \neq j \ \text{and} \ \forall \ a \neq a'.\]
+% \noindent where 
+
+% Allele frequencies and dominance scores will be used to calculate additive and dominance covariance relationships between hybrid and parental populations. Whole genome, random, and selected subsets of loci will be sampled to evaluate predictive ability and necessary marker density. Genomic prediction accuracies of individual harvests, as well as annual yield of the the diverse diallel experiment will be compared to the adapted Cornell materials currently under evaluation in the field to determine what degree of genetic variability is necessary for adequate genomic prediction accuracy. 
+
+% Looking forward, we will be collaborating with Breeding Insight to aid in construction of a high-throughput cost effective marker platform. The germplasm source materials sequenced here will allow for a wider survey of haplotypes which will aid imputation and construction of a Practical Haplotype Graph for alfalfa in BI. This data may also allow for determination of a ``core'' alfalfa genome that is highly conserved across elite and extant accessions of alfalfa, which may hold important genes for targeted amplicon marker design that can capture multiple alleles. 
+
+
+
+
+% A genomic prediction model will be fit to evaluate the usefulness of the genotypic information to predict forage yield.
+
+
+% Using the dominant AFLP markers (presence/absence), we constructed the hybrid population genotypes `in silico' by summing the AFLP scores for each parental pair. Dominance scores were defined as 1 when one parent population had an allele that was missing in the other parent population, and 0 otherwise. This provided an approximation of the hybrid population genotypes that were subsequently used to calculate relationships between families and determine if the phenotypes were predictable using genotypic information alone. A `leave one family out' strategy was implemented to validate that there is the genomic predictability in the somewhat small data set. The high level of genetic variability in the diallel was demonstrated by high genomic predictability, with leave one family out genomic prediction accuracies ranging from 0.55-0.97 (Figure XXX). Generally, inclusion of marker information increased prediction accuracy compared to a pedigree based prediction model. Inclusion of dominance predictors also increased accuracy for several families, demonstrating that dominance effects are important contributors, and will allow for prediction of hybrid vigor. This data set is atypical in the genetic signal due to the large genetic variability and known recent familial relationships, but we chose this population as a proof of concept because it is small (low cost), and has a high potential to detect differences (high genetic variance). 
+
+% These results demonstrate that if a high-throughput genotyping platform can be built, then the population level genotyping strategy should be feasible for genomic prediction and selection in alfalfa, as well as other outcrossing synthetic populations. The genotyping technology used in that study was low throughput, and does not allow for estimation of allele dosage. We expect that allele dosage information should increase the predictive ability of such models, especially when the genetic variability is lower than in this diallel, as would be expected in elite breeding materials. Sequence information from these populations will allow us to target regions of the alfalfa genome to aid in building a high-throughput genotyping platform that can capture the allelic diversity of improved materials and sources of new genetic variability.
+
+% Eight Cornell varieties and breeding populations will also be genotyped using this strategy to determine if predictability benefits from allele dosage information in more elite material. 
+
+
+% This is the first time our lab will use sequencing services from the BRC. We are requesting funds to bulk sequence remnant seed from the nine historical alfalfa populations from Segovia Lerma et al. (2004). Genotyping these nine populations using their sequences will allow us to answer initial questions about the proposed genotyping strategy for outcrossing synthetic populations. 
+
+
+
+
+\subsection{Growth Curves}
+
+Genotype specific growth curves were fit using the following random regression model:
+
+
+\begin{equation} \label{eq:G}
+	 \mathbf{y} = \mathbf{1} \mu + \mathbf{X} \boldsymbol{\beta} + \mathbf{Z}_\mathbf{u} + \mathbf{W}_\mathbf{g} \boldsymbol\varepsilon 
+\end{equation}
+
+where 
+
+\begin{equation}
+ \mathbf{y} = \begin{bmatrix}
+    \mathbf{y}_1 \\
+    \mathbf{y}_2 \\
+    \vdots \\
+    \mathbf{y}_t \\
+    \mathbf{y}_p
+  \end{bmatrix} \ \text{,} \  \mathbf{X} = \begin{bmatrix}
+    \mathbf{1}_{(t+1)bn} \ \ \mathbf{1}_{t+1} \otimes \mathbf{I}_{b} \otimes \mathbf{1}_{g}
+  \end{bmatrix} \ \text{and} \  \mathbf{Z} = \begin{bmatrix}
+    \mathbf{l}_0 \ \mathbf{l}_1 \ \mathbf{l}_2 \ \mathbf{l}_3
+  \end{bmatrix}
+\end{equation}
+
+
+\begin{table}
+\label{legfunc}
+% \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}llr}
+\begin{tabular}{llr}
+	 Symbol & Degree & Legendre polynomial function \\ 
+	 \hline
+	 $\mathbf{l}_0$ & 0 & 1 \\
+	 $\mathbf{l}_1$ & 1 & $\mathbf{x}$ \\
+	 $\mathbf{l}_2$ & 2 & $\frac{1}{2}(3\mathbf{x}^2 - 1)$ \\
+	 $\mathbf{l}_3$ & 3 & $\frac{1}{2}(5\mathbf{x}^3 - 3\mathbf{x})$ \\
+	 \hline
+\end{tabular}
+\end{table}
+
+
+$\mathbf{l}_0$ through $\mathbf{l}_3$ are the functions, $f(x)$, of the first four legendre polynomials for $x$ growing degree days, standardized between -1 and 1 when $\mathbf{y}$ is a VI, and 0 otherwise (see Table \ref{legfunc}). The vector $\mathbf{p} = 1$ when $\mathbf{y}$ is a phenotype, and 0 otherwise, and is used to estimate the genotypic effect of the end-use trait. The vectors, $\boldsymbol \beta$, of fixed block effects within each time point and end-use phenotype, $u$ of Legendre function parameters for each genotype, and $g$ of end-use trait estimates for each genotype are estimated using restricted maximum liklihood implemented in remlf90 \parencite{misztal2002}.
+
+
+
+No permanent environmental effect beyond block time effects was fit due to the relatively small physical size of the trial and number of entries. 
+
+
+\begin{equation}
+ \mathbf{y} = \text{Var}\begin{pmatrix}
+    \mathbf{u} \\
+    \mathbf{g} \\
+  \end{pmatrix} \ \text{,} \  \mathbf{Z} = \begin{bmatrix}
+    \mathbf{1}_{(t+1)bn} \ \mathbf{1}_{t+1} \otimes \mathbf{I}_{b} \otimes \mathbf{1}_{g}
+  \end{bmatrix} \ \text{and} \  \mathbf{Z} = \begin{bmatrix}
+    \mathbf{l}_0 \ \mathbf{l}_1 \ \mathbf{l}_2 \ \mathbf{l}_3
+  \end{bmatrix}
+\end{equation}
+
+
+
+
+\subsection{}
+
+% An alfalfa variety trial planted in Geneva NY, Eight Cornell varieties currently in the second forage production year of a replicated trial near Geneva, NY, will be imaged and sequenced for genotyping. Forage yield will be collected for each harvest, while forage quality samples will be collected for the second harvest of each year from three replications. Quality samples will be submitted to Dairy One for Basic Forage quality measurements. Drone imaging will commence after the first cut of alfalfa in 2019 due to a timing conflict. Multi-spectral images will be collected semi-weekly for the second and third cuts in 2019, and all three cuts in 2020. This should provide eight to ten time points per cut from which to fit growth curves. 
+
+% To minimize cost and simulate the high-throughput that would be necessary for scaling up, 100 whole germinated seedlings will be bulk homogenized, and the DNA will be extracted from the lysate using a DNeasy Maxi prep (Qiagen). Here, we will use exactly the same number of seedlings for each population, but in practice, this will likely be ignored, as the expected allele frequencies are not influenced by the number of individuals. 
+
+% Whole genome sequencing libraries will be prepared by Biotechnology Resource Center (BRC) at Cornell. In addition to the eight Cornell lines, five additional hybrid populations made from crosses between material from the nine germplasm sources \parencite{segovia2004} will be included to evaluate the accuracy of allele frequency estimation. The twelve populations will then be pooled and sequenced on four lanes. Sequences will be aligned to the diploid alfalfa genome, CADL v0.95 (\href{http://www.medicagohapmap.org/}{Medicago HapMap project, NSF Project IOS-1237993}, 2016). Only reads that align to a single site will used for genotyping. Intervals will be defined based on coverage and polymorphism, and allele reads within those intervals will be counted for each population using open source and custom software. Additive frequency scores will be standardized to sum to one within each population, and dominance scores will be produced by all pairwise products of additive allele scores. In this way, the method is flexible to allow for multiple alleles per locus (i.e. $> 2$). We will use bi-allelic SNPs, as well as define haplotypes based on reads with multiple SNPs. %More complex procedures may be developed and investigated to define haplotypes if haplotype prediction outperforms bi-allelic SNP prediction. 
+
+% Multivariate mixed models will be used to estimate the genetic correlation of spectral indices (e.g. NDVI) with forage yield and quality traits. Random regression using B-splines will also be used to fit population specific growth curves for spectral indices . B-spline functions will allow the shape of the growth curve to vary for each population, with covariance of growth curves as a function of the genetic covariance. Genomic prediction accuracies and reduced replication accuracies will be calculated to determine the predictability of population-level genetic relationships and the efficacy of multi-spectral imaging to reduce phenotypic burden. 
+
+
+* Predicted forage yield estimates were centered to the mean of the last time point estimates ($x = 1$ for legendre polynomial estimates), and scaled for visualization purposes. 
+
+
+\subsection{Population-level genotyping}
+
+Estimates of hybrid population allele frequencies based on parental population frequencies were highly correlated with those observed in the five hybrid populations from the diallel that were included in the sequencing, ranging from 0.88 to 0.91. This suggests the bulk genotyping approach is effective at sampling the true allele frequencies within populations. 
+
+
+
+Population level, whole-genome sequencing has been completed for all eight varieties under field evaluation, as well as nine parent populations from the diallel study \parencite{segovia2004}, and five of their diallel hybrids for validation. Bi-allelic variant calling has been performed against the tetraploid alfalfa genome provided by the Noble Research Institute, and we have produced 89,908 sites under strict filtering. Only sites with at least 20$\times$, but no more than 125$\times$, coverage for all populations were kept. Genotypes were further filtered to only include sites with a mean reference allele frequency greater than 0.1 or less than 0.9. We have yet to test the effects of allowing more than 2 alleles or different filtering parameters, but will be carried out at a later date. Initial results confirm hybrid parentage and the ability to construct hybrid genotypes \emph{in silico}, as well as the confirmation of biological replicates as controls (Figure \ref{heatmap}). 
+
+\begin{figure}
+\includegraphics[width = \linewidth, clip, trim = 0cm 0cm 0cm 4cm]{"\string~/Dropbox/checkoffUpdate2020/Fig1USAFRIupdate"}
+\caption{Heatmap of pairwise $F_{st}$ values between populations, with rows and columns sorted using hierarchical clustering. Brighter colors indicate higher $F_{st}$ values, and therefore higher additive genetic covariance between populations.}
+\label{heatmap}
+\end{figure}
+
+\subsection{Genetic covariance between populations}
+
+
+Due to a lack of full rank, the inversion issues 
+
+Pairwise $F_{st}$'s were used to calculate additive genetic relationships between populations \parencite{weir2002}. These were then used to evaluate genomic predictive ability of yearly dry matter forage yield in the diallel population which was previously evaluated in Las Cruces, NM in 1997 and 1998 \parencite{segovia2004}. $F_{st}$'s showed increased overall predictive ability over pedigree or dominant markers (AFLPs), especially for the most highly unrelated family. This suggests that tracking allele frequencies at many loci better captures relationships between sites and causal loci, rather than simply tracking familial relationships (Figure \ref{predacc}). We have yet to evaluate predictive ability for the populations currently under evaluation, but will be doing so in the near future. 
+
+\begin{figure}
+\includegraphics[width = \linewidth]{"\string~/Dropbox/checkoffUpdate2020/Fig2USAFRIupdate"}
+\caption{Prediction accuracy using a leave one family out strategy for a diallel population with 9 parental populations, and 36 hybrid populations of alfalfa. For each of the nine parents, all entries with that parent were removed and predicted using the remaining eight families and the additive genetic covariance estimated using pedigrees, dominant markers \parencite[AFLPs;][]{segovia2004}, or $F_{st}$ statistics calculated from variant frequencies determined by whole-genome resequencing.}
+\label{predacc}
+\end{figure}
+
+\subsection{Aerial imaging}
+
+We have concluded imaging for the second and third harvest of 2019. We have also processed images into orthomosaics, assigned plots to each image, and extracted plot level phenotypes for all 22 flights in 2019. These phenotypes are currently being stored on our public database at \href{http://www.imagebreed.org}{www.imagebreed.org}. We have had some issues with image processing that we are currently trying to resolve for a few flights, so some of these images may be updated in the following months. Specifically, we have some image artifacts for a few flights late in the season that cause a handful of particularly low NDVI values at Julian days 245, 248 and 252, late into the third regrowth period. Once these issues have been corrected, we will proceed to fitting genotype specific growth curves for these two harvests. Aerial phenotyping for the 2020 regrowth cycles will commence in the following days. 
+
+
+
+
+\subsection{Forage quality}
+
+Quality samples from the second regrowth in 2019 were harvested using standard practices, dried and ground. These samples were submitted to Dairy One for quantification of crude protein (CP) and neutral detergent fiber (NDF). 
+
+
+
+\section{Results}
+
+\subsection{Phenotypic description}
+
+\begin{table}[ht]
+\caption{Trait means, heritability and ANOVA p-values for forage yield, crude protein and neutral detergent fiber across 2 harvests in each of 2019 and 2020 for all fifteen entries, or only the eight entries with genotypic information.}
+\centering
+\begin{tabular*}{\hsize}{@{\extracolsep{\fill}}lccrrrrrr}
+% \begin{tabular}{rrrrrr}
+  % \hline
+ trait & year & harvest & \begin{tabular}{c} mean \\ kg ha$^{-1}$ \end{tabular} & iidh2 & iidh28 & covh28 & anovaPval & anovaPval8 \\ 
+  \hline
+  Forage yield & 2019 & 2           & 1.51  & 0.11 & 0.11 & 0.00 & 0.1073 & 0.1751 \\ 
+  Crude Protein & 2019 & 2           & 0.18 & 0.07 & 0.04 & 0.00 & 0.1888 & 0.3219 \\ 
+  NDF & 2019 & 2 & 0.47 & 0.15 & 0.14 & 0.1200 & 0.0478 & 0.1196 \\ 
+  Forage yield & 2019 & 3            & 0.99 & 0.21 & 0.31 & 0.40 & 0.0117 & 0.0110 \\ 
+  Forage yield & 2020 & 1            & 2.65 & 0.40 & 0.24 & 0.24 & $< 0.0001$ & 0.0326 \\ 
+  Forage yield & 2020 & 2            & 1.44 & 0.71 & 0.63 & 0.71 & $< 0.0001$ & $< 0.0001$ \\ 
+  Crude Protein & 2020 & 2           & 0.24 & 0.42 & 0.43 & 0.57 & $< 0.0001$ & 0.0012 \\ 
+  NDF & 2020 & 2 & 0.43 & 0.00 & 0.00 & 0.00 & 0.7521 & 0.7195 \\ 
+   \hline
+\end{tabular*}
+\end{table}
+
+
+
+
+\begin{table}[ht]
+\caption{}
+\centering
+\begin{tabular}{lrrrr}
+  \hline
+ & yld2\_19 & yld3\_19 & yld1\_20 & yld2\_20 \\ 
+  \hline
+yld2\_19 & 0.11 & 0.63 & 0.85 & 0.71 \\ 
+  yld3\_19 & 0.86 & 0.21 & 0.88 & 0.62 \\ 
+  yld1\_20 & -0.26 & -0.14 & 0.40 & 0.74 \\ 
+  yld2\_20 & -0.06 & 0.05 & 0.35 & 0.71 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+ 
+
+
+
+\subsection{Efficacy of pop-level Genotyping approach}
+
+
+	A total of 77,688,674 polymorphic sites were identified in the panel of alfalfa populations. Filtering to keep sites with at least 20, but no more than 125 reads for each population produced a total of 273,939 sites. These were filtered to obtain total allele frequencies of $0.05 < p < 0.95$, resulting in 89908 sites for estimating genetics relationships across populations.
+
+	Of the two methods used to estimate genetic relationships, the simple covariance of allele frequencies tended to be more stable for model fitting, suggesting that estimating the gentic covariance based on pairwise $F_{st}$ statistics does not produce a positive definite matrix. This is likely due to the unknown (i.e. because the reference (or basal?)  Fst cannot be estimated due to lack of degrees of freedom, the matrix has a rank < n (likely n-1 or 2)) limitations of. Further investigation is required to determine how this arises. 
+
+	Correlations between expected and empirical allele frequency estimates for the diallel popultion hybrids was very high, ranging from 0.9 to 0.9, further validating the ability of sequenced based methods to accurately sample alleles and estimate frequency, even in bulk samples with unbalanced numbers of cells per individual, given sufficient individuals are included inthe bulk (i.e. large sample size).
+
+	Genetic relationships were similar to those estimated in the same population lusing AFLPs (Segovia Lerma 2004), with families clustering together (see figure X), especially 
+
+
+Sample mix up: The 
+
+2019 forage quality samples appear to have an issue with the data that is most likely a mix up of the samples with their respective plot  identifiers. Neither CP or NDF had significant genotype effects (pvals?) in 2019, while both 2020 quality measurements were sinificant at p =  , respectively. The clear patterns seen in the 2020 forage quality data suggest that the 2019 data was somehow corrupted. It is currently unlcear where the mistake was made. 
+
+
+	All sequences will be made publically available before publication. 
+
+- descriptive
+	- total of 77,688,674 polymorphic sites
+	- filtered by --minCnt 20 --maxCnt 125 --minMean 20 --maxMean 75 --minTot 0 --maxTot 10000
+		. 273,939 sites
+	- further filtering to get allele frequencies 
+
+	* number of sites before / after filtering
+
+- heatmaps of relationship matrices
+	* relationships within
+	* families tend to cluster as expected
+
+- crossvalidation in diallel
+	* 
+
+- crossvalidation in geneva trial (exists?)
+	* CV accuracy of leave one out approach. 
+
+\subsection{Genetic Relationships between Vegitative Indices anf forage yield and quality}	
+
+- Yield
+	* Genetic correlations very high
+
+- Quality
+	* no genotype effects
+	* estimates close to zero
+
+- 
+
+\subsection{Using Vegetative indices to predict yield and reduce phenotypic burden}
+
+- predicting harvests with vegitative indices
+
+- predicting values without harvesting all reps. 
+	* genetic relationships allow for reduced phenotyping
+	* unclear if veg indices 
+
+\subsection{Genotype specific Growth curves}
+
+\begin{figure}
+ \begin{tikzpicture}
+
+  \begin{scope}[xshift=-6cm, yshift=9cm, scale=0.32]
+    \node (wheatbigDark) at (0,0) {\includegraphics[width = 6cm]{{{"\string~/Dropbox/alfalfaLongitudinal/plots/growthCurveDeviations_ndvi_yld_h2_2019_geno8"}}}};
+  \end{scope}
+
+  \begin{scope}[xshift=0cm, yshift=9cm, scale=0.32]
+    \node (wheatbigDark) at (0,0) {\includegraphics[width = 6cm]{{{"\string~/Dropbox/alfalfaLongitudinal/plots/growthCurvesWithMeanCurve_ndvi_yld_h2_2019_geno8"}}}};
+  \end{scope}
+
+  \begin{scope}[xshift=6cm, yshift=9cm, scale=0.32]
+    \node (wheatbigDark) at (0,0) {\includegraphics[width = 6cm]{{{"\string~/Dropbox/alfalfaLongitudinal/plots/AUC_ndvi_yld_h2_2019_geno8"}}}};
+  \end{scope}
+
+  \begin{scope}[xshift=-6cm, yshift=3cm, scale=0.32]
+    \node (wheatbigDark) at (0,0) {\includegraphics[width = 6cm]{{{"\string~/Dropbox/alfalfaLongitudinal/plots/growthCurveDeviations_ndvi_yld_h3_2019_geno8"}}}};
+  \end{scope}
+
+  \begin{scope}[xshift=0cm, yshift=3cm, scale=0.32]
+    \node (wheatbigDark) at (0,0) {\includegraphics[width = 6cm]{{{"\string~/Dropbox/alfalfaLongitudinal/plots/growthCurvesWithMeanCurve_ndvi_yld_h3_2019_geno8"}}}};
+  \end{scope}
+
+  \begin{scope}[xshift=6cm, yshift=3cm, scale=0.32]
+    \node (wheatbigDark) at (0,0) {\includegraphics[width = 6cm]{{{"\string~/Dropbox/alfalfaLongitudinal/plots/AUC_ndvi_yld_h3_2019_geno8"}}}};
+  \end{scope}
+
+
+  \begin{scope}[xshift=-6cm, yshift=-3cm, scale=0.32]
+    \node (wheatbigDark) at (0,0) {\includegraphics[width = 6cm]{{{"\string~/Dropbox/alfalfaLongitudinal/plots/growthCurveDeviations_ndvi_yld_h1_2020_geno8"}}}};
+  \end{scope}
+
+  \begin{scope}[xshift=0cm, yshift=-3cm, scale=0.32]
+    \node (wheatbigDark) at (0,0) {\includegraphics[width = 6cm]{{{"\string~/Dropbox/alfalfaLongitudinal/plots/growthCurvesWithMeanCurve_ndvi_yld_h1_2020_geno8"}}}};
+  \end{scope}
+
+  \begin{scope}[xshift=6cm, yshift=-3cm, scale=0.32]
+    \node (wheatbigDark) at (0,0) {\includegraphics[width = 6cm]{{{"\string~/Dropbox/alfalfaLongitudinal/plots/AUC_ndvi_yld_h1_2020_geno8"}}}};
+  \end{scope}
+
+
+
+  \begin{scope}[xshift=-6cm, yshift=-9cm, scale=0.32]
+    \node (wheatbigDark) at (0,0) {\includegraphics[width = 6cm]{"\string~/Dropbox/alfalfaLongitudinal/plots/growthCurveDeviations_ndvi_yld_h2_2020_geno8"}};
+  \end{scope}
+
+  \begin{scope}[xshift=0cm, yshift=-9cm, scale=0.32]
+    \node (wheatbigDark) at (0,0) {\includegraphics[width = 6cm]{"\string~/Dropbox/alfalfaLongitudinal/plots/growthCurvesWithMeanCurve_ndvi_yld_h2_2020_geno8"}};
+  \end{scope}
+
+  \begin{scope}[xshift=6cm, yshift=-9cm, scale=0.32]
+    \node (wheatbigDark) at (0,0) {\includegraphics[width = 6cm]{"\string~/Dropbox/alfalfaLongitudinal/plots/AUC_ndvi_yld_h2_2020_geno8"}};
+  \end{scope}
+
+ \end{tikzpicture}
+
+\end{figure}
+
+
+- Growth curves and relationships between curve and forage yield
+
+- Area under the curve and relationship to forage yields
+
+
+\section{Conclusion}
+
+- Other linear and non-linear indices should be investigated
+- larger sample sizes needed to validate and decipher more consistent trends
+
+
+\begin{figure}
+\includegraphics[width = \linewidth]{"\string~/Dropbox/checkoffUpdate2020/Fig4USAFRIupdate"}
+\caption{Raw NDVI values plotted against time in Julian days for the second and third regrowth cycles in 2019. The red line indicates the phenotypic mean at each imaging date.}
+\label{ndvi}
+\end{figure}
+
+\newpage
+
+\printbibliography
+
+% \section{References}
+% Segovia-Lerma, A., Murray, L. W., Townsend, M. S., and I. M. Ray. 2004. \emph{Population-based diallel analyses among nine historically recognized alfalfa germplasms}. Theor. Appl. Genet., 109(8), 1568-1575.\\
+
+% Weir, B.S. and W.G. Hill. 2002. \emph{Estimating F-Statistics}. Annu. Rev. Genet. 2002. 36:721–50. doi: 10.1146/annurev.genet.36 050802.093940
+
+\end{document}
