@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: RobbinsUSAFRI2020report.aux
 The style file: biblatex.bst
@@ -21,44 +21,44 @@ Database file #2: refs.bib
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 10 entries,
+You've used 11 entries,
             6268 wiz_defined-function locations,
-            1248 strings with 10493 characters,
-and the built_in function-call counts, 66822 in all, are:
-= -- 4869
-> -- 1236
-< -- 393
-+ -- 1914
-- -- 445
-* -- 4833
-:= -- 6968
+            1254 strings with 10622 characters,
+and the built_in function-call counts, 73120 in all, are:
+= -- 5319
+> -- 1374
+< -- 450
++ -- 2053
+- -- 488
+* -- 5275
+:= -- 7509
 add.period$ -- 0
-call.type$ -- 10
-change.case$ -- 274
+call.type$ -- 11
+change.case$ -- 313
 chr.to.int$ -- 30
-cite$ -- 18
-duplicate$ -- 7570
-empty$ -- 5833
-format.name$ -- 756
-if$ -- 13561
+cite$ -- 20
+duplicate$ -- 8207
+empty$ -- 6410
+format.name$ -- 824
+if$ -- 14932
 int.to.chr$ -- 0
-int.to.str$ -- 27
+int.to.str$ -- 30
 missing$ -- 0
-newline$ -- 424
-num.names$ -- 563
-pop$ -- 3269
+newline$ -- 455
+num.names$ -- 635
+pop$ -- 3609
 preamble$ -- 1
-purify$ -- 348
+purify$ -- 392
 quote$ -- 0
-skip$ -- 2033
+skip$ -- 2287
 stack$ -- 0
-substring$ -- 7644
-swap$ -- 1858
-text.length$ -- 271
-text.prefix$ -- 15
+substring$ -- 8364
+swap$ -- 2035
+text.length$ -- 301
+text.prefix$ -- 16
 top$ -- 1
-type$ -- 328
+type$ -- 362
 warning$ -- 0
-while$ -- 915
+while$ -- 972
 width$ -- 0
-write$ -- 415
+write$ -- 445

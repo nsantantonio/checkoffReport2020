@@ -261,6 +261,37 @@
     \field{year}{2020}
   \endentry
 
+  \entry{oakley1917}{book}{}
+    \name{author}{2}{}{%
+      {{hash=ORA}{%
+         family={Oakley},
+         familyi={O\bibinitperiod},
+         given={Russell\bibnamedelima Arthur},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Garver},
+         familyi={G\bibinitperiod},
+         given={Samuel},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {US Department of Agriculture}%
+    }
+    \strng{namehash}{ORAGS1}
+    \strng{fullhash}{ORAGS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1917}
+    \field{labeldatesource}{year}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{number}{428}
+    \field{title}{Medicago falcata, a yellow-flowered alfalfa}
+    \field{year}{1917}
+  \endentry
+
   \entry{segovia2003}{article}{}
     \name{author}{4}{}{%
       {{hash=SLA}{%
