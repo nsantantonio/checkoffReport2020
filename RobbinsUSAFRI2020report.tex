@@ -143,7 +143,7 @@ Blacksburg, VA 24060
 
 \section{Abstract}
 
-Abstract: (Limit 200-300 words)
+High-throughput phenotyping and genotyping provide vast information resources to be used in evaluation and selection of breeding materials, but their implementation has been limited in alfalfa due to the complexity of the genetics and the perennial nature of the crop. Indicators of forage growth and development can be measured inexpensively and non-destructively throughout each regrowth cycle using vegetative indices (VI) collected by an unmanned aerial vehicle (UAV) equipped with a multi-spectral camera. By considering VIs as genetically correlated traits to end-use phenotypes such as forage yield and quality, potential exists to reduce the phenotypic load by reducing the number of plots that must be harvested. Random regression models are well suited for fitting longitudinal phenotypes, such as VIs collected through time, and can be implemented to estimate growth curves for each population under evaluation, assess the genetic variation in growth and its relation to end-use products like forage yield and quality. Genetic relationships calculated from genome-wide markers allow for information sharing, better model fitting and the ability to predict unobserved materials. However, calculation of genetic relationships is problematic in alfalfa because varieties are not genetically distinct individuals, but instead synthetic populations. We demonstrate a population-level genotyping approach to estimate the genetic relatedness between alfalfa populations using pairwise $F_{st}$ statistics calculated from sequenced-based allele counts in bulk samples. Using a diallel of historic alfalfa germplasm sources previously evaluated at New Mexico State University, and a panel of Cornell alfalfa currently under field evaluation, we demonstrate the efficacy of using genetic relationships between populations to fit genotype-specific growth curves and predict the genetic merit of varieties and breeding populations. 
 
 \section{Introduction}
 
@@ -174,7 +174,7 @@ In this report, we detail our findings for incorporating genome-wide population-
 
 \subsection{Plant materials}
 
-To help evaluate the efficacy of the proposed bulk genotyping method in a diverse background, remnant seed from a diallel study \parencite{segovia2004} was obtained from Ian Ray at New Mexico State University. Segovia Lerma et al. \parencite*{segovia2004} created a half diallel by crossing all possible pairs of the nine historic North American germplasm source populations, African, Chilean, Flemish, Indian, Ladak, M. \emph{falcata}, M. \emph{varia}, Peruvian, and Turkistan \parencite{barnes1977}. The resulting 36 hybrid populations along with the 9 parental populations were evaluated in the field in 1997 and 1998 near Las Cruces, NM in a replicated complete block design. Forage dry matter content data from this experiment for five harvests in each year was provided by Ian Ray at New Mexico State University (NMSU), as well as AFLP genotyping data from the nine parental populations \parencite[1544 AFLP markers;][]{segovia2004}.
+To help evaluate the efficacy of the proposed bulk genotyping method in a diverse background, remnant seed from a diallel study \parencite{segovia2004} was obtained from Ian Ray at New Mexico State University. Segovia Lerma et al. \parencite*{segovia2004} created a half diallel by crossing all possible pairs of the nine historic North American germplasm source populations, African, Chilean, Flemish, Indian, Ladak, \emph{M. falcata}, \emph{M. varia}, Peruvian, and Turkistan \parencite{barnes1977}. The resulting 36 hybrid populations along with the 9 parental populations were evaluated in the field in 1997 and 1998 near Las Cruces, NM in a replicated complete block design. Forage dry matter content data from this experiment for five harvests in each year was provided by Ian Ray at New Mexico State University (NMSU), as well as AFLP genotyping data from the nine parental populations \parencite[1544 AFLP markers;][]{segovia2004}.
 
 Eight Cornell varieties and breeding populations were selected for sequence-based genotyping. These eight populations were established in a replicated variety trial along with seven commercial populations with 5 replicates in Geneva, NY in the spring of 2017. Remnant seed from the trial planting was obtained and used for sequence-based genotyping. Permission to genotype the remaining seven commercial varieties was not obtained at the time of project conception. Forage yield was measured using a plot flail harvester, and dry matter yield for each plot was calculated from fresh forage weight and dry matter content samples. Forage yield (FY) was collected for three cuts in 2018, 2019 and 2020. Only forage yields from cuts where aerial imaging was conducted are included in this report, which consisted of regrowth periods two and three in 2019, and regrowth periods one and two in 2020. Quality samples from the second regrowth in 2019 and 2020 were harvested using standard practices, dried and ground. These samples were submitted to Dairy One for quantification of percent crude protein (CP) and percent neutral detergent fiber (NDF).
 
@@ -218,7 +218,7 @@ A multivariate mixed model was used to estimate genetic correlation between end-
 \begin{equation} \label{mt}
 	 \mathbf{y} = \mathbf{1} \mu + \mathbf{X} \boldsymbol{\beta} + \mathbf{W}\mathbf{g} + \mathbf{e} 
 \end{equation}
-where the phenotypic observations of $\mathbf{y} = [\mathbf{y}_1', \ldots, \mathbf{y}_t']'$ for $t$ traits, and $\text{Var}(\mathbf{y}) = \mathbf{U} \otimes \mathbf{G} + \mathbf{R}$, where $\mathbf{U}$ and $\mathbf{R}$ are the unstructured trait and error covariance matrices to be estimated, and $\mathbf{G}$ is genetic the covariance between populations calculated from genetic markers.
+\noindent where the phenotypic observations of $\mathbf{y} = [\mathbf{y}_1', \ldots, \mathbf{y}_t']'$ for $t$ traits, and $\text{Var}(\mathbf{y}) = \mathbf{U} \otimes \mathbf{G} + \mathbf{R}$, where $\mathbf{U}$ and $\mathbf{R}$ are the unstructured trait and error covariance matrices to be estimated, and $\mathbf{G}$ is genetic the covariance between populations calculated from genetic markers.
  
 % \begin{equation}
 %  \text{Var}\begin{pmatrix}
@@ -246,7 +246,7 @@ Cross validation of genomic prediction in the diallel was used to compare a sequ
 
 % [this is a little out of order, may need to rearrange]
 
-To evaluate the potential of using vegetative indices to reduce the phenotypic burden of harvesting plots, two types prediction models were tested. The first model observed VIs for all replications in each trial, but did not observe plot forage yield for one to four replications. A bivariate linear mixed model was fit to estimate the genetic correlation between the most informative VI and forage yield for a given harvest, and predict the genetic values of entries for forage yield with the missing replications. The second model observed both forage yield and one informative VI for two to three harvests, but only an informative VI for the remaining one or two harvests. To combine multiple time points, the first principal component (PC) of the matrix of VI time points was also used as the correlated trait in place of a single informative VI time point. The genetic correlation of VI or PC with forage yield in observed harvests was then used to predict the genetic value of entries in harvests with only VI or PC information. Genetic relatedness between lines was included to allow for better estimation of genetic correlation parameters. As a control, we also performed predictions using only genomic information, without the use of VIs or PCs, as well as using simple genotype means from observed plots to predict the unobserved.  Prediction accuracy was assessed as the correlation between genetic values estimated as genotypic means within harvest using all forage data and those predicted genetic values with missing forage yield data.
+To evaluate the potential of using vegetative indices to reduce the phenotypic burden of harvesting plots, two types prediction models were tested. The first model observed VIs for all replications in each trial, but did not observe plot forage yield for one to four replications. A bivariate linear mixed model was fit to estimate the genetic correlation between the most informative VI and forage yield for a given harvest, and predict the genetic values of entries for forage yield with the missing replications. The second model observed both forage yield and one informative VI for two to three harvests, but only an informative VI for the remaining one or two harvests. The genetic correlation of the informative VI with forage yield in observed harvests was then used to predict the genetic value of entries in harvests with only VI information. Genetic relatedness between lines was included to allow for better estimation of genetic correlation parameters. As a control, we also performed predictions using only genomic information, without the use of VIs, as well as using simple genotype means from observed plots to predict the unobserved.  Prediction accuracy was assessed as the correlation between genetic values estimated as genotypic means within harvest using all forage data and those predicted genetic values with missing forage yield data.
 
 \subsection{Growth Curves}
 
@@ -265,7 +265,21 @@ Genotype specific growth curves were fit using all vegetative indices within a r
 	 \mathbf{y} = \mathbf{1} \mu + \mathbf{X} \boldsymbol{\beta} + \mathbf{Z}\mathbf{u} + \mathbf{W}\mathbf{g} + \mathbf{e} 
 \end{equation}
 
-where 
+\noindent where 
+
+% \begin{equation}
+%  \mathbf{y} = \begin{bmatrix}
+%     \mathbf{y}_1 \\
+%     \mathbf{y}_2 \\
+%     \vdots \\
+%     \mathbf{y}_t \\
+%     \mathbf{y}_p
+%   \end{bmatrix} \ \text{,} \  \mathbf{X} = \begin{bmatrix}
+%     \mathbf{1}_{(t+1)bn} \ \ \mathbf{1}_{t+1} \otimes \mathbf{I}_{b} \otimes \mathbf{1}_{g}
+%   \end{bmatrix} \ \text{,} \  \mathbf{Z} = \begin{bmatrix}
+%     \mathbf{l}_0 \ \mathbf{l}_1 \ \mathbf{l}_2 \ \mathbf{l}_3
+%   \end{bmatrix}
+% \end{equation}
 
 \begin{equation}
  \mathbf{y} = \begin{bmatrix}
@@ -274,13 +288,10 @@ where
     \vdots \\
     \mathbf{y}_t \\
     \mathbf{y}_p
-  \end{bmatrix} \ \text{,} \  \mathbf{X} = \begin{bmatrix}
-    \mathbf{1}_{(t+1)bn} \ \ \mathbf{1}_{t+1} \otimes \mathbf{I}_{b} \otimes \mathbf{1}_{g}
-  \end{bmatrix} \ \text{,} \  \mathbf{Z} = \begin{bmatrix}
+  \end{bmatrix} \quad \text{,} \quad \mathbf{Z} = \begin{bmatrix}
     \mathbf{l}_0 \ \mathbf{l}_1 \ \mathbf{l}_2 \ \mathbf{l}_3
   \end{bmatrix}
 \end{equation}
-
 
 \begin{table} 
 \caption{Table of first 4 Legendre polynomial functions used in this study.}
@@ -298,7 +309,7 @@ where
 \end{table}
 
 
-\noindent and $\mathbf{y}_i$ are vectors of plot level vegetative indices for each $i \in {1, ..., t}$ time points, and $\mathbf{y}_p$ is the vector of an end-use plot level phenotype. Vectors $\mathbf{l}_0$, $\mathbf{l}_1$, $\mathbf{l}_2$ and $\mathbf{l}_3$ are the evaluated functions, $f(x)$, of the first four Legendre polynomials for $x$ growing degree days, standardized between -1 and 1 when $\mathbf{y}$ is a vegetative index, and 0 otherwise (see Table \ref{tab:abc}). The vector $\mathbf{p} = 1$ when $\mathbf{y}$ is a phenotype, and 0 otherwise, and is used to estimate the genotypic effect of the end-use trait. The vectors, $\boldsymbol \beta$, of fixed block effects within each time point and end-use phenotype, $\mathbf{u}$ of Legendre function parameters for each genotype, and $g$ of end-use trait estimates for each genotype are estimated using restricted maximum likelihood implemented in remlF90 \parencite{misztal2002}.
+\noindent and $\mathbf{X}$ is the incidence matrix for block effects within time points. $\mathbf{y}_i$ are vectors of plot level vegetative indices for each $i \in {1, ..., t}$ time points, and $\mathbf{y}_p$ is the vector of an end-use plot level phenotype. Vectors $\mathbf{l}_0$, $\mathbf{l}_1$, $\mathbf{l}_2$ and $\mathbf{l}_3$ are the evaluated functions, $f(x)$, of the first four Legendre polynomials for $x$ growing degree days, standardized between -1 and 1 when $\mathbf{y}$ is a vegetative index, and 0 otherwise (see Table \ref{tab:abc}). The vector $\mathbf{p} = 1$ when $\mathbf{y}$ is a phenotype, and 0 otherwise, and is used to estimate the genotypic effect of the end-use trait. The vectors, $\boldsymbol \beta$, of fixed block effects within each time point and end-use phenotype, $\mathbf{u}$ of Legendre function parameters for each genotype, and $g$ of end-use trait estimates for each genotype are estimated using restricted maximum likelihood implemented in remlF90 \parencite{misztal2002}.
 
 An important benefit of using a random regression model with covariance functions, is that the number of variance components that need estimated is limited $(l+1) + \binom{l+1}{2}$ where $l$ is the degree of the Legendre polynomial function, plus one for the end-use phenotype. In this model, estimated genotype-specific growth curves are actually deviations from a mean, or average, growth curve, which could be called ``genetic growth curve deviations''.
 
@@ -484,7 +495,7 @@ Genetic correlations of forage yield between harvests were high (Table \ref{genC
 
 
 
-\begin{table}[ht]
+\begin{table}[b]
 \caption{Narrow sense heritability (diagonal), and genetic (above diagonal) and residual (below diagonal) correlations of forage yield by harvest.}
 \centering
 \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}lrrrr}
@@ -519,19 +530,10 @@ FY 2019 & 0.49 & -0.99 & 0.99 \\
 \end{table}
 
 
-\begin{table}[ht]
+\begin{table}[b]
 \caption{Narrow sense heritability (diagonal), and genetic (above diagonal) and residual (below diagonal) correlations of forage yield (FY) and quality traits, crude protein (CP) and neutral detergent fiber (NDF) for Harvest 2, 2020.}
 \centering
-\begin{tabular*}{\hsize}{@{\extracolsep{\fill}}lrrr}
-% \begin{tabular}{rrrr}
-  % \hline
- & FY 2020 & CP 2020 & NDF 2020 \\ 
-  \hline
-FY 2020 & 0.88 & -0.98 & 0.91 \\ 
-  CP 2020 & -0.30 & 0.78 & -0.84 \\ 
-  NDF 2020 & 0.03 & -0.26 & 0.23 \\ 
-   \hline
-\end{tabular*}
+
 \label{genCorQual20}
 \end{table}
 
@@ -667,7 +669,7 @@ Bivariate models were used to estimate genetic correlations for all pairwise com
 
 Informative VIs used for prediction were determined by heritability and genetic correlations, and were at Julian days 194 and 223 (GDDs 1723 and 2590) for the second and third harvests in 2019, and Julian days 125 and 183 (GDDs 198 and 1420) for the first and second harvest in 2020. 
 
-Using vegetative indices to predict forage yield without phenotypic data yielded mixed results. Generally, prediction of completely unobserved harvests was improved by using genetic relationships, and was often improved further by observing an informative VI, although this depended upon the harvest that was being predicted and which harvests were available to train the model on. The use of the first PC of the matrix of NDVI time points was often the best model, but also resulted in negative accuracy when the third harvest of 2019 and the second harvest of 2020 were used to train the model. The results warrant caution for the use of NDVI as a surrogate for forage yield. Further investigation with a larger study is needed to determine the efficacy of using vegetative indices to replace a plot harvester. Inclusion of genetic relationships did however, uniformly improve prediction of unobserved harvests over using simple means from observed ones. 
+Using vegetative indices to predict forage yield without phenotypic data yielded mixed results. Generally, prediction of completely unobserved harvests was improved by using genetic relationships, and was often improved further by observing an informative VI, although this depended upon the harvest that was being predicted and which harvests were available to train the model on. The results warrant caution for the use of NDVI as a surrogate for forage yield. Further investigation with a larger study is needed to determine the efficacy of using vegetative indices to replace a plot harvester. Inclusion of genetic relationships did however, uniformly improve prediction of unobserved harvests over using simple means from observed ones. 
 
 Inclusion of NDVI did not improve prediction of genetic values when some replicates were missing \ref{predRepsMean}. Instead allowing for genetic relatedness of populations was the best strategy to predict yield with reduced replication. Adding the extra phenotype appears to add some environmental error to the estimate of genetic merit for forage yield under reduced replications. This highlights the need to use genetic relationships when estimating the genetic merit of new breeding materials, as well as providing a opportunity to reduce replication and increase the number of entries in the trial. An increase in the number of potential new populations will increase selection intensity and the likelihood of identifying superior populations for future release as varieties.
 
@@ -680,46 +682,75 @@ Inclusion of NDVI did not improve prediction of genetic values when some replica
 % latex table generated in R 3.5.0 by xtable 1.8-4 package
 % Sun Aug 30 19:50:27 2020
 \begin{table}[ht]
-\caption{\nicholas{\textbf{REMOVE????}} Prediction accuracy of unobserved harvests for forage yield. Either the first principal component of the matrix of NDVI time points (PC), a single informative NDVI time point (VI), or no high throughput phenotype was observed (K and iid) in unobserved harvests. When no high throughput phenotype was used, either populations were allowed to have genetic relationships calculated from pairwise $F_{st}$'s' (K) or were considered independent (iid). For the iid method, simple means of observed plots were used to predict the genetic merit of each population.}
+\caption{Prediction accuracy of unobserved harvests for forage yield. Either a single informative NDVI time point (VI) or no high throughput phenotype was observed (K and iid) in unobserved harvests. When no high throughput phenotype was used, either populations were allowed to have genetic relationships calculated from pairwise $F_{st}$'s' (K) or were considered independent (iid). For the iid method, simple means of observed plots were used to predict the genetic merit of each population.}
 \centering
 \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}llrrrr}
 % \begin{tabular}{llrrrr}
   \hline
- Unobserved & Observed & VI & PC & K & iid \\ 
+ Unobserved & Observed & VI & K & iid \\ 
   \hline
-  FY1\_20 & FY2\_19 FY3\_19 & 0.55 & 0.74 & 0.53 & 0.49 \\ 
-  FY2\_20 & FY2\_19 FY3\_19 & 0.90 & 0.94 & 0.76 & 0.71 \\ 
-  FY3\_19 & FY2\_19 FY1\_20 & 0.68 & 0.73 & 0.86 & 0.81 \\ 
-  FY2\_20 & FY2\_19 FY1\_20 & 0.90 & 0.94 & 0.82 & 0.74 \\ 
-  FY3\_19 & FY2\_19 FY2\_20 & 0.68 & 0.73 & 0.93 & 0.94 \\ 
-  FY1\_20 & FY2\_19 FY2\_20 & 0.55 & 0.74 & 0.64 & 0.61 \\ 
-  FY2\_19 & FY3\_19 FY1\_20 & 0.81 & 0.71 & 0.68 & 0.68 \\ 
-  FY2\_20 & FY3\_19 FY1\_20 & 0.90 & 0.94 & 0.88 & 0.84 \\ 
-  FY2\_19 & FY3\_19 FY2\_20 & 0.82 & -0.71 & 0.72 & 0.72 \\ 
-  FY1\_20 & FY3\_19 FY2\_20 & 0.55 & -0.74 & 0.65 & 0.64 \\ 
-  FY2\_19 & FY1\_20 FY2\_20 & 0.82 & 0.71 & 0.55 & 0.54 \\ 
-  FY3\_19 & FY1\_20 FY2\_20 & 0.68 & 0.73 & 0.76 & 0.73 \\ 
-  FY2\_20 & FY2\_19 FY3\_19 FY1\_20 & 0.90 & 0.94 & 0.84 & 0.80 \\ 
-  FY1\_20 & FY2\_19 FY3\_19 FY2\_20 & 0.55 & 0.74 & 0.62 & 0.60 \\ 
-  FY3\_19 & FY2\_19 FY1\_20 FY2\_20 & 0.68 & 0.73 & 0.88 & 0.87 \\ 
-  FY2\_19 & FY3\_19 FY1\_20 FY2\_20 & 0.81 & 0.71 & 0.66 & 0.67 \\ 
+  FY1\_20 & FY2\_19 FY3\_19 & 0.55 & 0.53 & 0.49 \\ 
+  FY2\_20 & FY2\_19 FY3\_19 & 0.90 & 0.76 & 0.71 \\ 
+  FY3\_19 & FY2\_19 FY1\_20 & 0.68 & 0.86 & 0.81 \\ 
+  FY2\_20 & FY2\_19 FY1\_20 & 0.90 & 0.82 & 0.74 \\ 
+  FY3\_19 & FY2\_19 FY2\_20 & 0.68 & 0.93 & 0.94 \\ 
+  FY1\_20 & FY2\_19 FY2\_20 & 0.55 & 0.64 & 0.61 \\ 
+  FY2\_19 & FY3\_19 FY1\_20 & 0.81 & 0.68 & 0.68 \\ 
+  FY2\_20 & FY3\_19 FY1\_20 & 0.90 & 0.88 & 0.84 \\ 
+  FY2\_19 & FY3\_19 FY2\_20 & 0.82 & 0.72 & 0.72 \\ 
+  FY1\_20 & FY3\_19 FY2\_20 & 0.55 & 0.65 & 0.64 \\ 
+  FY2\_19 & FY1\_20 FY2\_20 & 0.82 & 0.55 & 0.54 \\ 
+  FY3\_19 & FY1\_20 FY2\_20 & 0.68 & 0.76 & 0.73 \\ 
+  FY2\_20 & FY2\_19 FY3\_19 FY1\_20 & 0.90 & 0.84 & 0.80 \\ 
+  FY1\_20 & FY2\_19 FY3\_19 FY2\_20 & 0.55 & 0.62 & 0.60 \\ 
+  FY3\_19 & FY2\_19 FY1\_20 FY2\_20 & 0.68 & 0.88 & 0.87 \\ 
+  FY2\_19 & FY3\_19 FY1\_20 FY2\_20 & 0.81 & 0.66 & 0.67 \\ 
    \hline
 \end{tabular*}
 \end{table}
 
-\begin{table}[ht]
-\caption{\nicholas{\textbf{Need to either keep means or individual accuracies (above table)..}} Mean prediction accuracy of unobserved harvests using either 2 or 3 harvest for prediction}
-\centering
-\begin{tabular*}{\hsize}{@{\extracolsep{\fill}}lrrrr}
-% \begin{tabular}{rrrrrr}
-  \hline
- ObsHarv & VI & PC & K & iid \\ 
-  \hline
-  2 & 0.74 & 0.54 & 0.73 & 0.70 \\ 
-  3 & 0.74 & 0.78 & 0.75 & 0.73 \\ 
-   \hline
-\end{tabular*}
-\end{table}
+
+% \begin{table}[ht]
+% \caption{\nicholas{\textbf{REMOVE????}} Prediction accuracy of unobserved harvests for forage yield. Either a single informative NDVI time point (VI) or no high throughput phenotype was observed (K and iid) in unobserved harvests. When no high throughput phenotype was used, either populations were allowed to have genetic relationships calculated from pairwise $F_{st}$'s' (K) or were considered independent (iid). For the iid method, simple means of observed plots were used to predict the genetic merit of each population.}
+% \centering
+% \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}llrrrr}
+% % \begin{tabular}{llrrrr}
+%   \hline
+%  Unobserved & Observed & VI & PC & K & iid \\ 
+%   \hline
+%   FY1\_20 & FY2\_19 FY3\_19 & 0.55 & 0.74 & 0.53 & 0.49 \\ 
+%   FY2\_20 & FY2\_19 FY3\_19 & 0.90 & 0.94 & 0.76 & 0.71 \\ 
+%   FY3\_19 & FY2\_19 FY1\_20 & 0.68 & 0.73 & 0.86 & 0.81 \\ 
+%   FY2\_20 & FY2\_19 FY1\_20 & 0.90 & 0.94 & 0.82 & 0.74 \\ 
+%   FY3\_19 & FY2\_19 FY2\_20 & 0.68 & 0.73 & 0.93 & 0.94 \\ 
+%   FY1\_20 & FY2\_19 FY2\_20 & 0.55 & 0.74 & 0.64 & 0.61 \\ 
+%   FY2\_19 & FY3\_19 FY1\_20 & 0.81 & 0.71 & 0.68 & 0.68 \\ 
+%   FY2\_20 & FY3\_19 FY1\_20 & 0.90 & 0.94 & 0.88 & 0.84 \\ 
+%   FY2\_19 & FY3\_19 FY2\_20 & 0.82 & -0.71 & 0.72 & 0.72 \\ 
+%   FY1\_20 & FY3\_19 FY2\_20 & 0.55 & -0.74 & 0.65 & 0.64 \\ 
+%   FY2\_19 & FY1\_20 FY2\_20 & 0.82 & 0.71 & 0.55 & 0.54 \\ 
+%   FY3\_19 & FY1\_20 FY2\_20 & 0.68 & 0.73 & 0.76 & 0.73 \\ 
+%   FY2\_20 & FY2\_19 FY3\_19 FY1\_20 & 0.90 & 0.94 & 0.84 & 0.80 \\ 
+%   FY1\_20 & FY2\_19 FY3\_19 FY2\_20 & 0.55 & 0.74 & 0.62 & 0.60 \\ 
+%   FY3\_19 & FY2\_19 FY1\_20 FY2\_20 & 0.68 & 0.73 & 0.88 & 0.87 \\ 
+%   FY2\_19 & FY3\_19 FY1\_20 FY2\_20 & 0.81 & 0.71 & 0.66 & 0.67 \\ 
+%    \hline
+% \end{tabular*}
+% \end{table}
+
+% \begin{table}[ht]
+% \caption{\nicholas{\textbf{Need to either keep means or individual accuracies (above table)..}} Mean prediction accuracy of unobserved harvests using either 2 or 3 harvest for prediction}
+% \centering
+% \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}lrrrr}
+% % \begin{tabular}{rrrrrr}
+%   \hline
+%  ObsHarv & VI & PC & K & iid \\ 
+%   \hline
+%   2 & 0.74 & 0.54 & 0.73 & 0.70 \\ 
+%   3 & 0.74 & 0.78 & 0.75 & 0.73 \\ 
+%    \hline
+% \end{tabular*}
+% \end{table}
 
 % \begin{table}[ht]
 % \caption{\nicholas{\textbf{REMOVE????}} Prediction accuracy of unobserved harvests}
@@ -751,18 +782,18 @@ Inclusion of NDVI did not improve prediction of genetic values when some replica
 
 
 \begin{table}[ht]
-\caption{Mean accuracy of genetic values when 1 to 4 replications of forage biomass data are set to missing. Either the first principal component of the matrix of NDVI time points (PC), a single informative NDVI time point (VI), or no high throughput phenotype was observed (K and iid) for up to 4 reps for each harvest. When no high throughput phenotype was used, either populations were allowed to have genetic relationships calculated from pairwise $F_{st}$'s' (K) or were considered independent (iid). For the iid method, simple means of observed plots were used to predict the genetic merit of each population.}
+\caption{Mean accuracy of genetic values when 1 to 4 replications of forage biomass data are set to missing. Either a single informative NDVI time point (VI), or no high throughput phenotype was observed (K and iid) for up to 4 reps for each harvest. When no high throughput phenotype was used, either populations were allowed to have genetic relationships calculated from pairwise $F_{st}$'s (K) or were considered independent (iid). For the iid method, simple means of observed plots were used to predict the genetic merit of each population.}
 
 \centering
 \begin{tabular*}{\hsize}{@{\extracolsep{\fill}}lrrrr}
 % \begin{tabular}{rrrrr}
   \hline
- \# observed reps & PC & VI & K & iid \\ 
+ \# observed reps & VI & K & iid \\ 
   \hline
-  4 & 0.87 & 0.89 & 0.96 & 0.96 \\ 
-  3 & 0.82 & 0.82 & 0.92 & 0.91 \\ 
-  2 & 0.81 & 0.77 & 0.85 & 0.82 \\ 
-  1 & 0.69 & 0.62 & 0.71 & 0.65 \\ 
+  4 & 0.89 & 0.96 & 0.96 \\ 
+  3 & 0.82 & 0.92 & 0.91 \\ 
+  2 & 0.77 & 0.85 & 0.82 \\ 
+  1 & 0.62 & 0.71 & 0.65 \\ 
    \hline
 \end{tabular*}
 \label{predRepsMean}
@@ -844,13 +875,10 @@ Inclusion of NDVI did not improve prediction of genetic values when some replica
 % 	* CV accuracy of leave one out approach. 
 
 
-
-
-
 \subsection{Genotype specific growth curves}
 
 \begin{table}[h]
-\caption{Genetic correlations of Legendre polynomial parameters, L0, L1, L2, and L3 with forage yield (FY) in all four harvests, and NDF for harvest 2, 2019, and CP for harvest 2 2020. NDF in 2020 and CP in 2019 were not included as they had little to no genetic variation.}
+\caption{Genetic correlations of Legendre polynomial parameters, L0, L1, L2, and L3 with forage yield (FY) in all four harvests, and CP and NDF for harvest 2, 2019, and harvest 2, 2020. }
 \noindent%
 \begin{minipage}[h]{.45\textwidth}
 \centering
@@ -1005,6 +1033,7 @@ NDF Harvest 2
 \end{tabular}
 
 \end{minipage}% <---------------- Note the use of "%"
+\label{curveParamCor}
 \end{table}
 
 
@@ -1197,7 +1226,7 @@ NDF Harvest 2
 
 Shapes in growth curves differed for each harvest, but some trends were evident (Figure \ref{growthcurvesyld}). In particular, populations with faster regrowth tended to have higher yields than those with slower regrowth, an observation that has no doubt not escaped forage breeders since the profession has existed. The effect was less evident in harvest 1, 2020, the only harvest we sampled after winter dormancy, but it is unclear if regrowth after winter is less important, or if this was a unique event. Quality measures tended to follow their genetic correlations with forage yield (see Table, with high protein (CP) associated with lower yields and high digestible carbohydrates (NDF) associated with high yields, despite the lack of much genetic variability for CP in 2019 and NDF in 2020 (Figure \ref{growthcurvesqual}). 
 
-The $L0$ Legendre parameter coefficient, akin to an intercept, or ``mean'' genetic value  was consistently highly correlated with Forage Yield, while the linear ($L1$), quadratic ($L2$) and and cubic ($L3$) Legendre polynomial components were more variable. Higher order Legendre polynomial coefficients also tended to be highly positively or negatively correlated with one another, but these trends changed from harvest to harvest. 
+The $L0$ Legendre parameter coefficient, akin to an intercept, or ``mean'' genetic value  was consistently highly correlated with forage yield, while the linear ($L1$), quadratic ($L2$) and and cubic ($L3$) Legendre polynomial components were more variable (Table \ref{curveParamCor}). Higher order Legendre polynomial coefficients also tended to be highly positively or negatively correlated with one another, but these trends changed from harvest to harvest. 
 
 The area under the growth curve (AUGC) corresponded well with final forage biomass, suggesting these growth curves can be used to estimate total photosynthate partitioning to the harvested product, which in this case is above ground biomass. Mean growth curves are subject to environmental effects, such as temperature and precipitation. The change in genetic growth curve deviations from harvest to harvest suggests that varieties respond differentially under different environmental stresses. Further investigation is needed to determine if these environmental conditions had an effect on the  mean as well as the gene.
 
@@ -1229,6 +1258,10 @@ We want to express special appreciation to the Noble Research Institute for prov
 
 
 \printbibliography
+
+
+\section{Keywords}
+Alfalfa $|$ forage $|$ random regression $|$ longitudinal phenotypes $|$ high-throughput phenotyping $|$ proximal sensing $|$ vegetative index $|$ growth curves $|$ genomic prediction $|$ genomic selection $|$ population-level genotyping $|$ $F_{st}$
 
 % \section{References}
 % Segovia-Lerma, A., Murray, L. W., Townsend, M. S., and I. M. Ray. 2004. \emph{Population-based diallel analyses among nine historically recognized alfalfa germplasms}. Theor. Appl. Genet., 109(8), 1568-1575.\\

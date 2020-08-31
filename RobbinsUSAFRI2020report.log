@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.2)  30 AUG 2020 21:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.2)  31 AUG 2020 15:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1038,95 +1038,95 @@ Overfull \hbox (20.23589pt too wide) in paragraph at lines 117--133
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6]
-Underfull \hbox (badness 3919) in paragraph at lines 334--335
+[7]
+Underfull \hbox (badness 3919) in paragraph at lines 344--345
 []\OT1/cmr/m/n/12 Evaluate the ef-fi-cacy of us-ing a
  []
 
 
-Underfull \hbox (badness 5175) in paragraph at lines 334--335
+Underfull \hbox (badness 5175) in paragraph at lines 344--345
 \OT1/cmr/m/n/12 per-for-mance in di-verse and elite
  []
 
 
-Underfull \hbox (badness 5446) in paragraph at lines 335--336
+Underfull \hbox (badness 5446) in paragraph at lines 345--346
 \OT1/cmr/m/n/12 multi-spectral in-dices with for-age
  []
 
 
-Overfull \hbox (2.61823pt too wide) in paragraph at lines 329--354
+Overfull \hbox (2.61823pt too wide) in paragraph at lines 339--364
 $[]$$[]$ $[]$ 
  []
 
-[7]
-<plots/Fig1USAFRIupdate.pdf, id=159, 505.89pt x 505.89pt>
+<plots/Fig1USAFRIupdate.pdf, id=163, 505.89pt x 505.89pt>
 File: plots/Fig1USAFRIupdate.pdf Graphic file (type pdf)
 <use plots/Fig1USAFRIupdate.pdf>
-Package pdftex.def Info: plots/Fig1USAFRIupdate.pdf  used on input line 363.
+Package pdftex.def Info: plots/Fig1USAFRIupdate.pdf  used on input line 373.
 (pdftex.def)             Requested size: 469.75502pt x 364.07927pt.
- [8]
-<plots/FstLeaveOneFamOutPredAcc.pdf, id=179, 722.7pt x 505.89pt>
+[8] [9 <./plots/Fig1USAFRIupdate.pdf>]
+<plots/FstLeaveOneFamOutPredAcc.pdf, id=194, 722.7pt x 505.89pt>
 File: plots/FstLeaveOneFamOutPredAcc.pdf Graphic file (type pdf)
 <use plots/FstLeaveOneFamOutPredAcc.pdf>
 Package pdftex.def Info: plots/FstLeaveOneFamOutPredAcc.pdf  used on input line
- 418.
+ 428.
 (pdftex.def)             Requested size: 469.75502pt x 328.8323pt.
- [9 <./plots/Fig1USAFRIupdate.pdf>] [10]
-<plots/heritabilityOfVI.pdf, id=207, page=1, 505.89pt x 505.89pt>
+ [10]
+<plots/heritabilityOfVI.pdf, id=210, page=1, 505.89pt x 505.89pt>
 File: plots/heritabilityOfVI.pdf Graphic file (type pdf)
 <use plots/heritabilityOfVI.pdf, page 1>
 Package pdftex.def Info: plots/heritabilityOfVI.pdf , page1 used on input line 
-577.
+578.
 (pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
-<plots/heritabilityOfVI.pdf, id=208, page=3, 505.89pt x 505.89pt>
+<plots/heritabilityOfVI.pdf, id=211, page=3, 505.89pt x 505.89pt>
 File: plots/heritabilityOfVI.pdf Graphic file (type pdf)
 <use plots/heritabilityOfVI.pdf, page 3>
 Package pdftex.def Info: plots/heritabilityOfVI.pdf , page3 used on input line 
-581.
+582.
 (pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
-<plots/heritabilityOfVI.pdf, id=209, page=2, 505.89pt x 505.89pt>
+<plots/heritabilityOfVI.pdf, id=212, page=2, 505.89pt x 505.89pt>
 File: plots/heritabilityOfVI.pdf Graphic file (type pdf)
 <use plots/heritabilityOfVI.pdf, page 2>
 Package pdftex.def Info: plots/heritabilityOfVI.pdf , page2 used on input line 
-585.
+586.
 (pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
-<plots/heritabilityOfVI.pdf, id=210, page=4, 505.89pt x 505.89pt>
+<plots/heritabilityOfVI.pdf, id=213, page=4, 505.89pt x 505.89pt>
 File: plots/heritabilityOfVI.pdf Graphic file (type pdf)
 <use plots/heritabilityOfVI.pdf, page 4>
 Package pdftex.def Info: plots/heritabilityOfVI.pdf , page4 used on input line 
-589.
+590.
 (pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
-<plots/legend0to1.pdf, id=211, page=1, 144.54pt x 505.89pt>
+<plots/legend0to1.pdf, id=214, page=1, 144.54pt x 505.89pt>
 File: plots/legend0to1.pdf Graphic file (type pdf)
 <use plots/legend0to1.pdf, page 1>
-Package pdftex.def Info: plots/legend0to1.pdf , page1 used on input line 593.
+Package pdftex.def Info: plots/legend0to1.pdf , page1 used on input line 594.
 (pdftex.def)             Requested size: 28.45274pt x 99.57831pt.
 
-Overfull \hbox (21.7742pt too wide) in paragraph at lines 596--598
+Overfull \hbox (21.7742pt too wide) in paragraph at lines 597--599
  [][] 
  []
 
-<plots/corByGDD.pdf, id=212, page=1, 505.89pt x 505.89pt>
+<plots/corByGDD.pdf, id=215, page=1, 505.89pt x 505.89pt>
 File: plots/corByGDD.pdf Graphic file (type pdf)
 <use plots/corByGDD.pdf, page 1>
-Package pdftex.def Info: plots/corByGDD.pdf , page1 used on input line 637.
+Package pdftex.def Info: plots/corByGDD.pdf , page1 used on input line 638.
 (pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
-<plots/corByGDD.pdf, id=213, page=4, 505.89pt x 505.89pt>
+<plots/corByGDD.pdf, id=216, page=4, 505.89pt x 505.89pt>
 File: plots/corByGDD.pdf Graphic file (type pdf)
 <use plots/corByGDD.pdf, page 4>
-Package pdftex.def Info: plots/corByGDD.pdf , page4 used on input line 641.
+Package pdftex.def Info: plots/corByGDD.pdf , page4 used on input line 642.
 (pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
-<plots/corByGDD.pdf, id=214, page=5, 505.89pt x 505.89pt>
+<plots/corByGDD.pdf, id=217, page=5, 505.89pt x 505.89pt>
 File: plots/corByGDD.pdf Graphic file (type pdf)
 <use plots/corByGDD.pdf, page 5>
-Package pdftex.def Info: plots/corByGDD.pdf , page5 used on input line 645.
+Package pdftex.def Info: plots/corByGDD.pdf , page5 used on input line 646.
 (pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
-<plots/corByGDD.pdf, id=215, page=6, 505.89pt x 505.89pt>
+<plots/corByGDD.pdf, id=218, page=6, 505.89pt x 505.89pt>
 File: plots/corByGDD.pdf Graphic file (type pdf)
 <use plots/corByGDD.pdf, page 6>
-Package pdftex.def Info: plots/corByGDD.pdf , page6 used on input line 649.
+Package pdftex.def Info: plots/corByGDD.pdf , page6 used on input line 650.
 (pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
 
-Overfull \hbox (40.10059pt too wide) in paragraph at lines 652--654
+Overfull \hbox (40.10059pt too wide) in paragraph at lines 653--655
  [][] 
  []
 
@@ -1137,197 +1137,197 @@ ByGDD.pdf> <./plots/corByGDD.pdf> <./plots/corByGDD.pdf>] [14]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<plots/growthCurveDeviations_ndvi_yld_h2_2019_geno8.pdf, id=267, 505.89pt x 505
+<plots/growthCurveDeviations_ndvi_yld_h2_2019_geno8.pdf, id=271, 505.89pt x 505
 .89pt>
 File: plots/growthCurveDeviations_ndvi_yld_h2_2019_geno8.pdf Graphic file (type
  pdf)
 <use plots/growthCurveDeviations_ndvi_yld_h2_2019_geno8.pdf>
 Package pdftex.def Info: plots/growthCurveDeviations_ndvi_yld_h2_2019_geno8.pdf
-  used on input line 1048.
+  used on input line 1076.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/growthCurvesWithMeanCurve_ndvi_yld_h2_2019_geno8.pdf, id=268, 505.89pt x
+<plots/growthCurvesWithMeanCurve_ndvi_yld_h2_2019_geno8.pdf, id=272, 505.89pt x
  505.89pt>
 File: plots/growthCurvesWithMeanCurve_ndvi_yld_h2_2019_geno8.pdf Graphic file (
 type pdf)
 <use plots/growthCurvesWithMeanCurve_ndvi_yld_h2_2019_geno8.pdf>
 Package pdftex.def Info: plots/growthCurvesWithMeanCurve_ndvi_yld_h2_2019_geno8
-.pdf  used on input line 1052.
+.pdf  used on input line 1080.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/AUC_ndvi_yld_h2_2019_geno8.pdf, id=269, 505.89pt x 505.89pt>
+<plots/AUC_ndvi_yld_h2_2019_geno8.pdf, id=273, 505.89pt x 505.89pt>
 File: plots/AUC_ndvi_yld_h2_2019_geno8.pdf Graphic file (type pdf)
 <use plots/AUC_ndvi_yld_h2_2019_geno8.pdf>
 Package pdftex.def Info: plots/AUC_ndvi_yld_h2_2019_geno8.pdf  used on input li
-ne 1056.
+ne 1084.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/growthCurveDeviations_ndvi_yld_h3_2019_geno8.pdf, id=270, 505.89pt x 505
+<plots/growthCurveDeviations_ndvi_yld_h3_2019_geno8.pdf, id=274, 505.89pt x 505
 .89pt>
 File: plots/growthCurveDeviations_ndvi_yld_h3_2019_geno8.pdf Graphic file (type
  pdf)
 <use plots/growthCurveDeviations_ndvi_yld_h3_2019_geno8.pdf>
 Package pdftex.def Info: plots/growthCurveDeviations_ndvi_yld_h3_2019_geno8.pdf
-  used on input line 1060.
+  used on input line 1088.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/growthCurvesWithMeanCurve_ndvi_yld_h3_2019_geno8.pdf, id=271, 505.89pt x
+<plots/growthCurvesWithMeanCurve_ndvi_yld_h3_2019_geno8.pdf, id=275, 505.89pt x
  505.89pt>
 File: plots/growthCurvesWithMeanCurve_ndvi_yld_h3_2019_geno8.pdf Graphic file (
 type pdf)
 <use plots/growthCurvesWithMeanCurve_ndvi_yld_h3_2019_geno8.pdf>
 Package pdftex.def Info: plots/growthCurvesWithMeanCurve_ndvi_yld_h3_2019_geno8
-.pdf  used on input line 1064.
+.pdf  used on input line 1092.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/AUC_ndvi_yld_h3_2019_geno8.pdf, id=272, 505.89pt x 505.89pt>
+<plots/AUC_ndvi_yld_h3_2019_geno8.pdf, id=276, 505.89pt x 505.89pt>
 File: plots/AUC_ndvi_yld_h3_2019_geno8.pdf Graphic file (type pdf)
 <use plots/AUC_ndvi_yld_h3_2019_geno8.pdf>
 Package pdftex.def Info: plots/AUC_ndvi_yld_h3_2019_geno8.pdf  used on input li
-ne 1068.
+ne 1096.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/growthCurveDeviations_ndvi_yld_h1_2020_geno8.pdf, id=273, 505.89pt x 505
+<plots/growthCurveDeviations_ndvi_yld_h1_2020_geno8.pdf, id=277, 505.89pt x 505
 .89pt>
 File: plots/growthCurveDeviations_ndvi_yld_h1_2020_geno8.pdf Graphic file (type
  pdf)
 <use plots/growthCurveDeviations_ndvi_yld_h1_2020_geno8.pdf>
 Package pdftex.def Info: plots/growthCurveDeviations_ndvi_yld_h1_2020_geno8.pdf
-  used on input line 1073.
+  used on input line 1101.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/growthCurvesWithMeanCurve_ndvi_yld_h1_2020_geno8.pdf, id=274, 505.89pt x
+<plots/growthCurvesWithMeanCurve_ndvi_yld_h1_2020_geno8.pdf, id=278, 505.89pt x
  505.89pt>
 File: plots/growthCurvesWithMeanCurve_ndvi_yld_h1_2020_geno8.pdf Graphic file (
 type pdf)
 <use plots/growthCurvesWithMeanCurve_ndvi_yld_h1_2020_geno8.pdf>
 Package pdftex.def Info: plots/growthCurvesWithMeanCurve_ndvi_yld_h1_2020_geno8
-.pdf  used on input line 1077.
+.pdf  used on input line 1105.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/AUC_ndvi_yld_h1_2020_geno8.pdf, id=275, 505.89pt x 505.89pt>
+<plots/AUC_ndvi_yld_h1_2020_geno8.pdf, id=279, 505.89pt x 505.89pt>
 File: plots/AUC_ndvi_yld_h1_2020_geno8.pdf Graphic file (type pdf)
 <use plots/AUC_ndvi_yld_h1_2020_geno8.pdf>
 Package pdftex.def Info: plots/AUC_ndvi_yld_h1_2020_geno8.pdf  used on input li
-ne 1081.
+ne 1109.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/growthCurveDeviations_ndvi_yld_h2_2020_geno8.pdf, id=276, 505.89pt x 505
+<plots/growthCurveDeviations_ndvi_yld_h2_2020_geno8.pdf, id=280, 505.89pt x 505
 .89pt>
 File: plots/growthCurveDeviations_ndvi_yld_h2_2020_geno8.pdf Graphic file (type
  pdf)
 <use plots/growthCurveDeviations_ndvi_yld_h2_2020_geno8.pdf>
 Package pdftex.def Info: plots/growthCurveDeviations_ndvi_yld_h2_2020_geno8.pdf
-  used on input line 1087.
+  used on input line 1115.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/growthCurvesWithMeanCurve_ndvi_yld_h2_2020_geno8.pdf, id=277, 505.89pt x
+<plots/growthCurvesWithMeanCurve_ndvi_yld_h2_2020_geno8.pdf, id=281, 505.89pt x
  505.89pt>
 File: plots/growthCurvesWithMeanCurve_ndvi_yld_h2_2020_geno8.pdf Graphic file (
 type pdf)
 <use plots/growthCurvesWithMeanCurve_ndvi_yld_h2_2020_geno8.pdf>
 Package pdftex.def Info: plots/growthCurvesWithMeanCurve_ndvi_yld_h2_2020_geno8
-.pdf  used on input line 1091.
+.pdf  used on input line 1119.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/AUC_ndvi_yld_h2_2020_geno8.pdf, id=278, 505.89pt x 505.89pt>
+<plots/AUC_ndvi_yld_h2_2020_geno8.pdf, id=282, 505.89pt x 505.89pt>
 File: plots/AUC_ndvi_yld_h2_2020_geno8.pdf Graphic file (type pdf)
 <use plots/AUC_ndvi_yld_h2_2020_geno8.pdf>
 Package pdftex.def Info: plots/AUC_ndvi_yld_h2_2020_geno8.pdf  used on input li
-ne 1095.
+ne 1123.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
 
-Overfull \hbox (29.65195pt too wide) in paragraph at lines 1014--1100
+Overfull \hbox (29.65195pt too wide) in paragraph at lines 1042--1128
 []  []
  []
 
 
-LaTeX Warning: Float too large for page by 34.56598pt on input line 1102.
+LaTeX Warning: Float too large for page by 34.56598pt on input line 1130.
 
-<plots/growthCurveDeviations_ndvi_CP_h2_2019_geno8.pdf, id=279, 505.89pt x 505.
+<plots/growthCurveDeviations_ndvi_CP_h2_2019_geno8.pdf, id=283, 505.89pt x 505.
 89pt>
 File: plots/growthCurveDeviations_ndvi_CP_h2_2019_geno8.pdf Graphic file (type 
 pdf)
 <use plots/growthCurveDeviations_ndvi_CP_h2_2019_geno8.pdf>
 Package pdftex.def Info: plots/growthCurveDeviations_ndvi_CP_h2_2019_geno8.pdf 
- used on input line 1142.
+ used on input line 1170.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/growthCurvesWithMeanCurve_ndvi_CP_h2_2019_geno8.pdf, id=280, 505.89pt x 
+<plots/growthCurvesWithMeanCurve_ndvi_CP_h2_2019_geno8.pdf, id=284, 505.89pt x 
 505.89pt>
 File: plots/growthCurvesWithMeanCurve_ndvi_CP_h2_2019_geno8.pdf Graphic file (t
 ype pdf)
 <use plots/growthCurvesWithMeanCurve_ndvi_CP_h2_2019_geno8.pdf>
 Package pdftex.def Info: plots/growthCurvesWithMeanCurve_ndvi_CP_h2_2019_geno8.
-pdf  used on input line 1146.
+pdf  used on input line 1174.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/AUC_ndvi_CP_h2_2019_geno8.pdf, id=281, 505.89pt x 505.89pt>
+<plots/AUC_ndvi_CP_h2_2019_geno8.pdf, id=285, 505.89pt x 505.89pt>
 File: plots/AUC_ndvi_CP_h2_2019_geno8.pdf Graphic file (type pdf)
 <use plots/AUC_ndvi_CP_h2_2019_geno8.pdf>
 Package pdftex.def Info: plots/AUC_ndvi_CP_h2_2019_geno8.pdf  used on input lin
-e 1150.
+e 1178.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/growthCurveDeviations_ndvi_NDF_h2_2019_geno8.pdf, id=282, 505.89pt x 505
+<plots/growthCurveDeviations_ndvi_NDF_h2_2019_geno8.pdf, id=286, 505.89pt x 505
 .89pt>
 File: plots/growthCurveDeviations_ndvi_NDF_h2_2019_geno8.pdf Graphic file (type
  pdf)
 <use plots/growthCurveDeviations_ndvi_NDF_h2_2019_geno8.pdf>
 Package pdftex.def Info: plots/growthCurveDeviations_ndvi_NDF_h2_2019_geno8.pdf
-  used on input line 1155.
+  used on input line 1183.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/growthCurvesWithMeanCurve_ndvi_NDF_h2_2019_geno8.pdf, id=283, 505.89pt x
+<plots/growthCurvesWithMeanCurve_ndvi_NDF_h2_2019_geno8.pdf, id=287, 505.89pt x
  505.89pt>
 File: plots/growthCurvesWithMeanCurve_ndvi_NDF_h2_2019_geno8.pdf Graphic file (
 type pdf)
 <use plots/growthCurvesWithMeanCurve_ndvi_NDF_h2_2019_geno8.pdf>
 Package pdftex.def Info: plots/growthCurvesWithMeanCurve_ndvi_NDF_h2_2019_geno8
-.pdf  used on input line 1159.
+.pdf  used on input line 1187.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/AUC_ndvi_NDF_h2_2019_geno8.pdf, id=284, 505.89pt x 505.89pt>
+<plots/AUC_ndvi_NDF_h2_2019_geno8.pdf, id=288, 505.89pt x 505.89pt>
 File: plots/AUC_ndvi_NDF_h2_2019_geno8.pdf Graphic file (type pdf)
 <use plots/AUC_ndvi_NDF_h2_2019_geno8.pdf>
 Package pdftex.def Info: plots/AUC_ndvi_NDF_h2_2019_geno8.pdf  used on input li
-ne 1163.
+ne 1191.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/growthCurveDeviations_ndvi_CP_h2_2020_geno8.pdf, id=285, 505.89pt x 505.
+<plots/growthCurveDeviations_ndvi_CP_h2_2020_geno8.pdf, id=289, 505.89pt x 505.
 89pt>
 File: plots/growthCurveDeviations_ndvi_CP_h2_2020_geno8.pdf Graphic file (type 
 pdf)
 <use plots/growthCurveDeviations_ndvi_CP_h2_2020_geno8.pdf>
 Package pdftex.def Info: plots/growthCurveDeviations_ndvi_CP_h2_2020_geno8.pdf 
- used on input line 1168.
+ used on input line 1196.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/growthCurvesWithMeanCurve_ndvi_CP_h2_2020_geno8.pdf, id=286, 505.89pt x 
+<plots/growthCurvesWithMeanCurve_ndvi_CP_h2_2020_geno8.pdf, id=290, 505.89pt x 
 505.89pt>
 File: plots/growthCurvesWithMeanCurve_ndvi_CP_h2_2020_geno8.pdf Graphic file (t
 ype pdf)
 <use plots/growthCurvesWithMeanCurve_ndvi_CP_h2_2020_geno8.pdf>
 Package pdftex.def Info: plots/growthCurvesWithMeanCurve_ndvi_CP_h2_2020_geno8.
-pdf  used on input line 1172.
+pdf  used on input line 1200.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/AUC_ndvi_CP_h2_2020_geno8.pdf, id=287, 505.89pt x 505.89pt>
+<plots/AUC_ndvi_CP_h2_2020_geno8.pdf, id=291, 505.89pt x 505.89pt>
 File: plots/AUC_ndvi_CP_h2_2020_geno8.pdf Graphic file (type pdf)
 <use plots/AUC_ndvi_CP_h2_2020_geno8.pdf>
 Package pdftex.def Info: plots/AUC_ndvi_CP_h2_2020_geno8.pdf  used on input lin
-e 1176.
+e 1204.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/growthCurveDeviations_ndvi_NDF_h2_2020_geno8.pdf, id=288, 505.89pt x 505
+<plots/growthCurveDeviations_ndvi_NDF_h2_2020_geno8.pdf, id=292, 505.89pt x 505
 .89pt>
 File: plots/growthCurveDeviations_ndvi_NDF_h2_2020_geno8.pdf Graphic file (type
  pdf)
 <use plots/growthCurveDeviations_ndvi_NDF_h2_2020_geno8.pdf>
 Package pdftex.def Info: plots/growthCurveDeviations_ndvi_NDF_h2_2020_geno8.pdf
-  used on input line 1182.
+  used on input line 1210.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/growthCurvesWithMeanCurve_ndvi_NDF_h2_2020_geno8.pdf, id=289, 505.89pt x
+<plots/growthCurvesWithMeanCurve_ndvi_NDF_h2_2020_geno8.pdf, id=293, 505.89pt x
  505.89pt>
 File: plots/growthCurvesWithMeanCurve_ndvi_NDF_h2_2020_geno8.pdf Graphic file (
 type pdf)
 <use plots/growthCurvesWithMeanCurve_ndvi_NDF_h2_2020_geno8.pdf>
 Package pdftex.def Info: plots/growthCurvesWithMeanCurve_ndvi_NDF_h2_2020_geno8
-.pdf  used on input line 1186.
+.pdf  used on input line 1214.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
-<plots/AUC_ndvi_NDF_h2_2020_geno8.pdf, id=290, 505.89pt x 505.89pt>
+<plots/AUC_ndvi_NDF_h2_2020_geno8.pdf, id=294, 505.89pt x 505.89pt>
 File: plots/AUC_ndvi_NDF_h2_2020_geno8.pdf Graphic file (type pdf)
 <use plots/AUC_ndvi_NDF_h2_2020_geno8.pdf>
 Package pdftex.def Info: plots/AUC_ndvi_NDF_h2_2020_geno8.pdf  used on input li
-ne 1190.
+ne 1218.
 (pdftex.def)             Requested size: 170.71652pt x 170.71892pt.
 
-Overfull \hbox (29.65195pt too wide) in paragraph at lines 1108--1195
+Overfull \hbox (29.65195pt too wide) in paragraph at lines 1136--1223
 []  []
  []
 
 
-LaTeX Warning: Float too large for page by 34.56598pt on input line 1197.
+LaTeX Warning: Float too large for page by 34.56598pt on input line 1225.
 
 [15] [16 <./plots/growthCurveDeviations_ndvi_yld_h2_2019_geno8.pdf> <./plots/gr
 owthCurvesWithMeanCurve_ndvi_yld_h2_2019_geno8.pdf> <./plots/AUC_ndvi_yld_h2_20
@@ -1352,28 +1352,28 @@ Missing character: There is no “ in font cmti10!
  [21
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1239.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1239.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1271.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1271.
 
 (./RobbinsUSAFRI2020report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1239.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1239.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1271.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1271.
 
 Package rerunfilecheck Info: File `RobbinsUSAFRI2020report.out' has not changed
 .
-(rerunfilecheck)             Checksum: 73267471350BDDB13F5247162ECA9B4B;1452.
+(rerunfilecheck)             Checksum: CA41648C9CF6FC873DD515FA27C41750;1496.
 Package logreq Info: Writing requests to 'RobbinsUSAFRI2020report.run.xml'.
 \openout1 = `RobbinsUSAFRI2020report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26764 strings out of 494923
- 513516 string characters out of 6180742
- 954114 words of memory out of 5000000
- 29553 multiletter control sequences out of 15000+600000
+ 26766 strings out of 494923
+ 513535 string characters out of 6180742
+ 952114 words of memory out of 5000000
+ 29555 multiletter control sequences out of 15000+600000
  13735 words of font info for 50 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 57i,12n,77p,1579b,1610s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,12n,77p,1961b,1610s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -1388,10 +1388,10 @@ msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on RobbinsUSAFRI2020report.pdf (21 pages, 590707 bytes).
+Output written on RobbinsUSAFRI2020report.pdf (21 pages, 590470 bytes).
 PDF statistics:
- 581 PDF objects out of 1000 (max. 8388607)
- 473 compressed objects within 5 object streams
+ 585 PDF objects out of 1000 (max. 8388607)
+ 477 compressed objects within 5 object streams
  82 named destinations out of 1000 (max. 500000)
- 354 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 362 words of extra memory for PDF output out of 10000 (max. 10000000)
 
