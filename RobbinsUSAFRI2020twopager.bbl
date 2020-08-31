@@ -1,0 +1,173 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nyt/global//global/global}
+  \entry{morales2020}{article}{}
+    \name{author}{6}{}{%
+      {{hash=MN}{%
+         family={Morales},
+         familyi={M\bibinitperiod},
+         given={Nicolas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=KNS}{%
+         family={Kaczmar},
+         familyi={K\bibinitperiod},
+         given={Nicholas\bibnamedelima S},
+         giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Santantonio},
+         familyi={S\bibinitperiod},
+         given={Nicholas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=GMA}{%
+         family={Gore},
+         familyi={G\bibinitperiod},
+         given={Michael\bibnamedelima A},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MLA}{%
+         family={Mueller},
+         familyi={M\bibinitperiod},
+         given={Lukas\bibnamedelima A},
+         giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=RKR}{%
+         family={Robbins},
+         familyi={R\bibinitperiod},
+         given={Kelly\bibnamedelima R},
+         giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{MN+1}
+    \strng{fullhash}{MNKNSSNGMAMLARKR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{1}
+    \field{pages}{e20004}
+    \field{title}{ImageBreed: Open-access plant breeding web--database for
+  image-based phenotyping}
+    \field{volume}{3}
+    \field{journaltitle}{The Plant Phenome Journal}
+    \field{year}{2020}
+  \endentry
+
+  \entry{segovia2003}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SLA}{%
+         family={Segovia-Lerma},
+         familyi={S\bibinitperiod-L\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=CR}{%
+         family={Cantrell},
+         familyi={C\bibinitperiod},
+         given={RG},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Conway},
+         familyi={C\bibinitperiod},
+         given={JM},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=RI}{%
+         family={Ray},
+         familyi={R\bibinitperiod},
+         given={IM},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {NRC Research Press}%
+    }
+    \strng{namehash}{SLA+1}
+    \strng{fullhash}{SLACRCJRI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2003}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{1}
+    \field{pages}{51\bibrangedash 58}
+    \field{title}{AFLP-based assessment of genetic diversity among nine alfalfa
+  germplasms using bulk DNA templates}
+    \field{volume}{46}
+    \field{journaltitle}{Genome}
+    \field{year}{2003}
+  \endentry
+
+  \entry{segovia2004}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SLA}{%
+         family={Segovia-Lerma},
+         familyi={S\bibinitperiod-L\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=ML}{%
+         family={Murray},
+         familyi={M\bibinitperiod},
+         given={LW},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Townsend},
+         familyi={T\bibinitperiod},
+         given={MS},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RI}{%
+         family={Ray},
+         familyi={R\bibinitperiod},
+         given={IM},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{SLA+1}
+    \strng{fullhash}{SLAMLTMRI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{8}
+    \field{pages}{1568\bibrangedash 1575}
+    \field{title}{Population-based diallel analyses among nine historically
+  recognized alfalfa germplasms}
+    \field{volume}{109}
+    \field{journaltitle}{Theoretical and applied genetics}
+    \field{year}{2004}
+  \endentry
+\enddatalist
+\endinput
