@@ -195,7 +195,7 @@ Additive genetic relationships between populations were calculated from allele f
 
 \subsection{Aerial phenotyping}
 
-Aerial phenotyping commenced on July 5th, 2019 during the in the second year of forage production shortly after the first cut on June 27th. A DJI Matrice 600 Pro unmanned aerial vehicle (UAV) equipped with a Micasense Rededge-MX multi-spectral camera was used for all flights. A flight plan was designed to obtain an 80\% overlap in images collected at a flight speed of 2 m/s and an altitude of 20 m. Flights were conducted within 2 hours of solar noon on clear days when possible. A total of 40 flights were conducted on average every 4.3 days across four harvests, with 10, 11, 12 and 7 flights for the cut 2 2019, cut 3 2019, cut 1 2020 and cut 2 2020, respectively. Four ground control points positioned at the four corners of the trial were measured with a Trimble RTK-GPS, which was used to geo-locate plots. Orthomosacis were constructed using Pix4D mapping software, and were subsequently uploaded into Imagebreed (www.imagebreed.org), a plot image database developed by our lab \parencite{morales2020}, for image processing and storage and vegetative index (VI) calculation at the plot level. All plot level image data has been made publicly available at www.imagebreed.org, while phenotypes and genotypes will be made publicly available at the time of publication, or by request.
+Aerial phenotyping commenced on July 5th, 2019 in the second year of forage production shortly after the first cut on June 27th. A DJI Matrice 600 Pro unmanned aerial vehicle (UAV) equipped with a Micasense Rededge-MX multi-spectral camera was used for all flights. A flight plan was designed to obtain an 80\% overlap in images collected at a flight speed of 2 m/s and an altitude of 20 m. Flights were conducted within 2 hours of solar noon on clear days when possible. A total of 40 flights were conducted on average every 4.3 days across four harvests, with 10, 11, 12 and 7 flights for the cut 2 2019, cut 3 2019, cut 1 2020 and cut 2 2020, respectively. Four ground control points positioned at the four corners of the trial were measured with a Trimble RTK-GPS, which was used to geo-locate plots. Orthomosacis were constructed using Pix4D mapping software, and were subsequently uploaded into Imagebreed (www.imagebreed.org), a plot image database developed by our lab \parencite{morales2020}, for image processing and storage and vegetative index (VI) calculation at the plot level. All plot level image data has been made publicly available at www.imagebreed.org, while phenotypes and genotypes will be made publicly available at the time of publication, or by request.
 
 
 Normalized difference vegetation indices (NDVI) were calculated from mean pixel values of near infrared (NIR) and Red bands of plot level images as
@@ -218,7 +218,6 @@ A multivariate mixed model was used to estimate genetic correlation between end-
 \begin{equation} \label{mt}
 	 \mathbf{y} = \mathbf{1} \mu + \mathbf{X} \boldsymbol{\beta} + \mathbf{W}\mathbf{g} + \mathbf{e} 
 \end{equation}
-
 where the phenotypic observations of $\mathbf{y} = [\mathbf{y}_1', \ldots, \mathbf{y}_t']'$ for $t$ traits, and $\text{Var}(\mathbf{y}) = \mathbf{U} \otimes \mathbf{G} + \mathbf{R}$, where $\mathbf{U}$ and $\mathbf{R}$ are the unstructured trait and error covariance matrices to be estimated, and $\mathbf{G}$ is genetic the covariance between populations calculated from genetic markers.
  
 % \begin{equation}
@@ -235,7 +234,7 @@ where the phenotypic observations of $\mathbf{y} = [\mathbf{y}_1', \ldots, \math
 
 % \noindent where $\mathbf{U}$ and $\mathbf{R}$ are the unstructured trait and error covariance matrices that are estimated, and $mathbf{G}$ is genetic the covariance between populations calculated from genetic markers.
 
-When the number of traits to be considered is small, all traits can be included in a single multivariate mixed model to estimate the $k + \binom{k}{2}$ trait variance components [[and $k + \binom{k}{2}$ error variance components]]; however, as the number of traits increases the number of variance components to be estimated becomes intractable. For example, estimating the genetic correlation between ten vegetative index time points and forage yield requires estimation of 11 variance components and 55 covariance components, which requires large data sets. For this study, all traits were included in a single multivariate model if the number of traits was $\leq 4$. When the number of desired comparisons was greater than 4, such as when comparing all vegetative index time points with forage yield, separate bivariate models were fit to estimate the genetic correlation in a pairwise fashion. 
+When the number of traits to be considered is small, all traits can be included in a single multivariate mixed model to estimate the $k + \binom{k}{2}$ trait variance components (and $k + \binom{k}{2}$ error variance components); however, as the number of traits increases the number of variance components to be estimated becomes intractable. For example, estimating the genetic correlation between ten vegetative index time points and forage yield requires estimation of 11 variance components and 55 covariance components, which requires large data sets. For this study, all traits were included in a single multivariate model if the number of traits was $\leq 4$. When the number of desired comparisons was greater than 4, such as when comparing all vegetative index time points with forage yield, separate bivariate models were fit to estimate the genetic correlation in a pairwise fashion. 
 
 Bivariate models were also used for prediction of end-use traits, where a vegetative index was observed for all plots, but end-use traits were only observed for some plots.  
 
@@ -470,12 +469,12 @@ Importantly, this highlights the need of an affordable, medium-density sequence-
    \hline
 \end{tabular*}
 \raggedright
-$^\dagger$ Broad Sense heritability estimated by treating enties as independent and identically distributed \\
+$^\dagger$ Broad Sense heritability estimated by treating entries as independent and identically distributed \\
 $^\ddagger h^2_{F_{st}}$ Narrow sense heritability estimated by allowing entries to have a covariance estimated with pairwise $F_{st}$.
 \label{anovaTab}
 \end{table}
 
-Trait means and heritabilities are shown in Table \ref{anovaTab}. Harvests with higher mean forage yields tended to have lower heritability, suggesting that some stress may allow for better genetic separation of populations. Most traits had significant genetic effects at $P < 0.05$ when analyzed using a simple ANOVA F-test that assumes lines are independent, with the exception of all traits in the second harvest of 2019, and NDF in 2020. Heritabilities increased when genetic relationships as calculated by pairwise $F_{st}$ were used to allow populations to be related to each other, and therefore share information. 
+Trait means and heritabilities are shown in Table \ref{anovaTab}. Harvests with higher mean forage yields tended to have lower heritability, suggesting that some stress may allow for better genetic separation of populations. Most traits had significant genetic effects at $P < 0.05$ when analyzed using a simple ANOVA F-test that assumes lines are independent, with the exception of all traits in the second harvest of 2019, and NDF in 2020. Heritabilities increased when genetic relationships as calculated by pairwise $F_{st}$ were used to capture genetic relationships between populations, and therefore share information. 
 
 % [paragraph noting the genetic variability of lack thereof in harvests for end use traits ]
 
